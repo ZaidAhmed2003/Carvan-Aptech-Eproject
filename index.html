@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CARVAN | Your Ultimate Destination for All Cars!</title>
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!------------------------ Header Section ------------------------>
     <header>
       <!-------------------- Navbar -------------------->
-      <div class="Navbar">
-        <nav class="container d-flex">
-          <div class="d-flex">
-            <div>
+      <div class="navbar py-4 px-5">
+        <nav class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <div class="navbar-logo pe-5">
               <a href="#">Logo</a>
             </div>
             <div>
-              <ul class="d-flex">
+              <ul class="d-flex navbar-links">
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Brands</a></li>
@@ -29,9 +33,9 @@
               </ul>
             </div>
           </div>
-          <div class="">
-            <div class="d-flex">
-              <a href="">Login</a>
+          <div class="d-flex align-items-center">
+            <div class="d-flex mx-3">
+              <a class="mx-4" href="">Login</a>
               <a href="">Signup</a>
             </div>
             <button class="btn" id="add-listing-btn">Add Listing</button>
@@ -40,7 +44,7 @@
       </div>
 
       <div class="header-section">
-        <video autoplay muted loop>
+        <video autoplay muted loop width="100%" height="100%">
           <source src="./assets/video/vehica-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -50,57 +54,84 @@
     <!------------------------ Main Content ------------------------>
 
     <main>
-      <div></div>
+      <section class="section-one"></section>
+      <section class="section-two"></section>
+      <section class="section-three"></section>
+      <section class="section-four"></section>
+      <section class="section-five"></section>
+      <section class="section-six"></section>
     </main>
 
     <!---------------------------- Footer ---------------------------->
     <footer>
-      <div class="footer-top">
-        <div class="footer-logo">
-          <a href="#">Logo</a>
+      <div class="container footer-wrapper">
+        <div class="footer-top row d-flex gx-4">
+          <div class="footer-logo col-2">
+            <a href="#">Logo</a>
+          </div>
+          <div class="footer-navlinks col-3">
+            <ul class="row row-cols-2 g-4">
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Brands</a></li>
+              <li><a href="">Range of Cars</a></li>
+              <li><a href="">PreOwned Cars</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-description col-3">
+            <p>
+              CARVAN is your trusted source for all things automotive. We
+              provide detailed information about a wide range of cars and offer
+              a unique selection of preowned vehicles with character and
+              history. Explore the world of automobiles with us!
+            </p>
+          </div>
+          <div class="footer-contacts row col-3 offset-1">
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem, ipsum dolor.</p>
+          </div>
         </div>
-        <div class="footer-navlinks">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Brands</a></li>
-            <li><a href="">Range of Cars</a></li>
-            <li><a href="">PreOwned Cars</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-description">
-          <p>
-            CARVAN is your trusted source for all things automotive. We provide
-            detailed information about a wide range of cars and offer a unique
-            selection of preowned vehicles with character and history. Explore
-            the world of automobiles with us!
-          </p>
-        </div>
-        <div class="footer-contacts">
-          <p>Lorem, ipsum dolor.</p>
-          <p>Lorem, ipsum dolor.</p>
-          <p>Lorem, ipsum dolor.</p>
-          <p>Lorem, ipsum dolor.</p>
-        </div>
-      </div>
-      <hr />
-      <div class="footer-end">
-        <div class="footer-copyrights">
-          <p>Copyright &copy; 2023 CARVAN. All Rights Reserved.</p>
-        </div>
-        <div class="footer-social">
-          <ul>
-            <li>
-              <a href="#"><img src="" alt="Facebook" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="" alt="Twitter" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="" alt="Instagram" /></a>
-            </li>
-          </ul>
+        <hr />
+        <div
+          class="footer-end d-flex justify-content-between align-items-center py-5"
+        >
+          <div class="footer-copyrights">
+            <p>Copyright &copy; 2023 CARVAN. All Rights Reserved.</p>
+          </div>
+          <div class="footer-social">
+            <ul class="d-flex g-4">
+              <li>
+                <div class="social-icon">
+                  <a href="#"
+                    ><img
+                      src="./assets/images/icons/facebook-icon.svg"
+                      alt="Facebook"
+                  /></a>
+                </div>
+              </li>
+              <li>
+                <div class="social-icon">
+                  <a href="#"
+                    ><img
+                      src="./assets/images/icons/twitter-icon.svg"
+                      alt="Twitter"
+                  /></a>
+                </div>
+              </li>
+              <li>
+                <div class="social-icon">
+                  <a href="#"
+                    ><img
+                      src="./assets/images/icons/instagram-icon.svg"
+                      alt="Instagram"
+                  /></a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
