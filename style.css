@@ -212,7 +212,6 @@ body {
   z-index: 2;
   transform: translateX(-300px);
   transition: transform 0.3s;
-  -webkit-overflow-scrolling: ;
 }
 
 .offcanvas-login-btn,
@@ -230,43 +229,6 @@ body {
 
 .offcanvas-btns {
   margin-top: 5rem;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0);
-  opacity: 0;
-  z-index: 1;
-  transition: all 0.5s;
-}
-
-/* Hide the scrollbar for webkit browsers (Chrome, Safari) */
-.navbar-offcanvas::-webkit-scrollbar {
-  width: 0.2rem; /* Adjust as needed to match your design */
-}
-
-/* Hide the scrollbar thumb for webkit browsers */
-.navbar-offcanvas::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
-
-/* Hide the scrollbar track for webkit browsers */
-.navbar-offcanvas::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-/* Hide the scrollbar for Firefox */
-.navbar-offcanvas {
-  scrollbar-width: none;
-}
-
-/* Hide the scrollbar for Internet Explorer and Edge */
-.navbar-offcanvas {
-  -ms-overflow-style: none;
 }
 
 /* ---xxxxxxxxxxxxx-------- Navbar EnD --------xxxxxxxxxxxx--- */

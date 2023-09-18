@@ -18,11 +18,9 @@ let navMenuBtn = document.querySelector(".menu");
 let offcanvasMenu = document.querySelector(".navbar-offcanvas");
 
 navMenuBtn.addEventListener("click", () => {
-  if (navMenuBtn.classList.contains("opened")) {
-    offcanvasMenu.style.transform = "translateX(0)";
-    document.querySelector(".overlay").style.opacity = ".5";
-  } else {
+  if (!navMenuBtn.classList.contains("opened")) {
     offcanvasMenu.style.transform = "translateX(-300px)";
-    document.querySelector(".overlay").style.opacity = "0";
+  } else {
+    offcanvasMenu.style.transform = "translateX(0)";
   }
 });
