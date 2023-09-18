@@ -1,104 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
 :root {
+  /* Colors */
+  --black: #000;
+  --white: #fff;
+  --primary-one: #ffffff;
+  --secondary-one: #1ecb15;
+  --secondary-two: #2cb625;
+  /* Font Family */
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+  /* Font Sizes */
+  --fs-para: 1rem;
+  --fs-links: 1.25rem;
+  /* Font Weight */
+  --fw-light: 300;
+  --fw-reguler: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  /* borders */
+  --border-radius: 4px;
+  /* Shadows */
+  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+/* Basic Styles */
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
   list-style-type: none;
+  text-decoration: none;
 }
 
-a {
-  color: white;
+body {
+  font-family: var(--font-primary);
 }
 
-.navbar {
-  background: transparent;
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
-.navbar-logo a {
-  font-size: 28px;
-}
-
-.navbar-links li {
-  font-size: 20px;
-  margin-right: 1rem;
-}
-
-header {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-video {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-
-/* -------------- Buttons ------------- */
+/*  Button Common */
 
 .btn {
-  font-size: 20px;
-  padding: 0.8rem 1rem;
-  border-radius: 1rem;
+  font-size: var(--fs-links);
+  font-weight: var(--fw-medium);
   outline: none;
-  border: 2px solid black;
-  background-color: transparent;
+  border: 2px solid var(--secondary-one);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
   cursor: pointer;
 }
 
-.btn:hover {
-  color: white;
-  background-color: black;
-  transition: all 0.3s;
+/* Navbar and Off-canvas Styles */
+
+/* Primary Button */
+.canvas-btn .btn {
+  background-color: var(--secondary-one);
+  color: var(--white);
+  margin-top: 6rem;
 }
 
-/* ----------------- Footer ----------------- */
-
-footer {
-  color: white;
-  background-color: #222732;
+/* Secondary Button */
+.navbar-btn .btn {
+  color: var(--black);
+  background-color: transparent;
 }
 
-.footer-top {
-  padding-block: 6rem;
-}
-.footer-logo {
-  font-size: 48px;
-}
-.footer-navlinks ul li {
-  list-style: disc;
-}
-.footer-navlinks ul li a {
-  font-size: 18px;
-}
-.footer-contacts p {
-  text-align: end;
+.navbar-btn .btn:hover {
+  color: var(--white);
+  background-color: var(--secondary-one);
+  transition: 0.2s;
 }
 
-.social-icon {
+.nav-btn .btn:active {
+  background-color: var(--secondary-two);
+}
+
+/* Navbar Links */
+.navbar-links ul li a {
+  color: var(--white);
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-links);
+}
+
+.navbar-links ul li a:hover {
+  color: var(--secondary-two);
+  transition: 0.2s;
+}
+
+.navbar-links ul li a.active {
   position: relative;
-  height: 40px;
-  aspect-ratio: 1 / 1;
-  background-color: rgb(161, 161, 161);
+  color: var(--secondary-two);
+}
+
+.navbar-links ul li a.active::after {
+  display: none;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--secondary-two);
   border-radius: 50%;
 }
 
-.social-icon a img {
-  position: relative;
-  fill: white;
-  top: 5px;
-  left: 6px;
-  height: 20px;
+/* Signup and Login Buttons */
+.signup-btn,
+.login-btn a {
+  font-size: var(--fs-para);
+  color: var(--black);
 }
+
+.login:hover,
+.signup-btn:hover,
+.login-btn a:hover {
+  color: var(--secondary-two);
+  transition: 0.2s;
+}
+
+/* User Icon */
+.user-icon {
+  font-size: 30px;
+  color: var(--secondary-one);
+}
+
+/* Menu Button */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  z-index: 99;
+}
+
+/* Menu Lines */
+.line {
+  fill: none;
+  stroke: var(--secondary-one);
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1,
+.line2,
+.line3 {
+  stroke-width: 6;
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+}
+
+/* Opened Menu Lines */
+.opened .line1,
+.opened .line2,
+.opened .line3 {
+  stroke-width: 6;
+  stroke-dashoffset: -134;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+}
+
+/* Navbar Styles */
+.navbar {
+  box-shadow: var(--shadow);
+}
+
+/* Logo Styles */
+.logo a img {
+  height: 50px;
+}
+
+/* Off-canvas Menu Styles */
+.navbar-offcanvas {
+  padding-left: 2rem;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  background-color: #000000da;
+  z-index: 2;
+  transform: translateX(-300px);
+  transition: transform 0.3s;
+  -webkit-overflow-scrolling: ;
+}
+
+.offcanvas-login-btn,
+.offcanvas-signup-btn {
+  color: var(--white) !important;
+  font-weight: var(--fw-medium);
+  font-size: 1rem; /* Adjust font size here */
+}
+
+.offcanvas-login-btn:hover,
+.offcanvas-signup-btn:hover {
+  color: var(--secondary-two);
+  transition: 0.2s;
+}
+
+.offcanvas-btns {
+  margin-top: 5rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0);
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+/* Hide the scrollbar for webkit browsers (Chrome, Safari) */
+.navbar-offcanvas::-webkit-scrollbar {
+  width: 0.2rem; /* Adjust as needed to match your design */
+}
+
+/* Hide the scrollbar thumb for webkit browsers */
+.navbar-offcanvas::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Hide the scrollbar track for webkit browsers */
+.navbar-offcanvas::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Hide the scrollbar for Firefox */
+.navbar-offcanvas {
+  scrollbar-width: none;
+}
+
+/* Hide the scrollbar for Internet Explorer and Edge */
+.navbar-offcanvas {
+  -ms-overflow-style: none;
+}
+
+/* ---xxxxxxxxxxxxx-------- Navbar EnD --------xxxxxxxxxxxx--- */
+
+/* Media Queries (Mobile-First) */
+@media screen and (min-width: 576px) {
+  /* Add mobile-specific styles here */
+}
+
+@media screen and (min-width: 768px) {
+  /* Add tablet-specific styles here */
+}
+
+@media screen and (min-width: 992px) {
+  /* Add desktop-specific styles here */
+}
+
+@media screen and (min-width: 1200px) {
+  /* Add large desktop-specific styles here */
+}
+
+@media screen and (min-width: 1336px) {
+  /* --------- Navbar -------- */
+  .nav-btn,
+  .navbar-links {
+    display: flex !important;
+  }
+
+  .menu {
+    display: none !important;
+  }
+
+  .logo a img {
+    margin-right: 4rem;
+  }
+
+  .navbar-btn,
+  .login,
+  .signup-btn {
+    display: block !important;
+  }
+
+  .navbar-links ul li a.active::after {
+    display: block;
+  }
+
+  .navbar-links ul li a {
+    margin-right: 1.5rem;
+    color: var(--black);
+  }
+
+  .navbar-links {
+    font-size: var(--fs-links);
+  }
+
+  .navbar-offcanvas {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* Add very large desktop-specific styles here */
+}
+/* ------------------------------------ Media Queries ---------------------------------- */

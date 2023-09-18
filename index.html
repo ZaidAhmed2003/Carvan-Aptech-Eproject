@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="description" content="">    // Find Content            -->
     <title>CARVAN | Your Ultimate Destination for All Cars!</title>
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,46 +20,109 @@
   </head>
   <body>
     <!------------------------ Header Section ------------------------>
-    <header>
+    <header class="header">
       <!-------------------- Navbar -------------------->
-      <div class="navbar py-4 px-5">
+      <div class="navbar py-2 px-2">
         <nav class="d-flex justify-content-between align-items-center">
-          <div class="d-flex align-items-center">
-            <div class="navbar-logo pe-5">
-              <a href="#">Logo</a>
+          <button
+            class="menu d-flex align-items-center justify-content-between"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            aria-label="Main Menu"
+          >
+            <svg width="50" height="50" viewBox="0 0 100 100">
+              <path
+                class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+              />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path
+                class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+              />
+            </svg>
+          </button>
+
+          <div class="navbar-left d-flex">
+            <div class="logo">
+              <a href="#"
+                ><img src="./assets/images/logo.png" alt="Carvan Logo"
+              /></a>
             </div>
-            <div>
-              <ul class="d-flex navbar-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Brands</a></li>
-                <li><a href="">Range of Cars</a></li>
-                <li><a href="">PreOwned Cars</a></li>
-                <li><a href="">Contact Us</a></li>
+            <div class="navbar-links d-none align-items-center">
+              <ul class="d-flex">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/about.html">About Us</a></li>
+                <li><a href="./pages/brands.html">Brands</a></li>
+                <li><a href="./pages/rangeofcars.html">Range of Cars</a></li>
+                <li><a href="./pages/preowned.html">PreOwned Cars</a></li>
+                <li><a href="./pages/Contact.html">Contact Us</a></li>
               </ul>
             </div>
           </div>
-          <div class="d-flex align-items-center">
-            <div class="d-flex mx-3">
-              <a class="mx-4" href="">Login</a>
-              <a href="">Signup</a>
+
+          <div class="navbar-right d-flex align-items-center">
+            <div class="d-flex align-items-center">
+              <div class="d-flex login-btn align-items-center">
+                <span
+                  class="user-icon d-flex align-items-center material-symbols-outlined"
+                >
+                  person
+                </span>
+                <a class="px-2 login d-none" href="">Login</a>
+              </div>
+              <a class="ps-2 signup-btn d-none" href="">Signup</a>
             </div>
-            <button class="btn" id="add-listing-btn">Add Listing</button>
+            <div class="navbar-btn d-none ms-3">
+              <button class="d-flex btn align-items-center">
+                <span class="material-symbols-outlined"> add </span>Add Listing
+              </button>
+            </div>
           </div>
         </nav>
       </div>
 
-      <div class="header-section">
-        <video autoplay muted loop width="100%" height="100%">
-          <source src="./assets/video/vehica-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div class="navbar-offcanvas d-flex row">
+        <div class="canvas-btn d-block">
+          <button class="d-flex btn" id="add-listing-btn">
+            <span class="material-symbols-outlined">add</span>Add Listing
+          </button>
+        </div>
+        <div class="navbar-links mt-5">
+          <ul class="row g-4">
+            <li><a href="#">Home</a></li>
+            <li><a href="./pages/about.html">About Us</a></li>
+            <li><a href="./pages/brands.html">Brands</a></li>
+            <li><a href="./pages/rangeofcars.html">Range of Cars</a></li>
+            <li><a href="./pages/preowned.html">PreOwned Cars</a></li>
+            <li><a href="./pages/Contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center offcanvas-btns">
+          <div class="d-flex login-btn align-items-center">
+            <span
+              class="user-icon d-flex align-items-center material-symbols-outlined"
+              >person</span
+            >
+            <a class="px-2 login offcanvas-login-btn" href="#">Login</a>
+          </div>
+          <a class="ps-2 signup-btn offcanvas-signup-btn" href="#">Signup</a>
+        </div>
       </div>
+      <div class="overlay"></div>
+
+      <!----------------- Section Content ---------------->
+      <!-- 
+      <div class="header-section"></div>
+      <img
+        class="header-car"
+        src="./assets/images/cars/car-silver.png"
+        alt="Car Image"
+      /> -->
     </header>
 
     <!------------------------ Main Content ------------------------>
 
-    <main>
+    <!-- <main>
       <section class="section-one container">
         <h2>Featured Listings</h2>
         <div class="row">
@@ -88,10 +157,10 @@
       <section class="section-four"></section>
       <section class="section-five"></section>
       <section class="section-six"></section>
-    </main>
+    </main> -->
 
-    <!---------------------------- Footer ---------------------------->
-    <footer>
+    <!-- -------------------------- Footer -------------------------->
+    <!--<footer class="footer">
       <div class="container footer-wrapper">
         <div class="footer-top row d-flex gx-4">
           <div class="footer-logo col-2">
@@ -163,6 +232,7 @@
         </div>
       </div>
     </footer>
+    -->
     <script src="index.js"></script>
   </body>
 </html>
