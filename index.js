@@ -24,3 +24,4 @@ navMenuBtn.addEventListener("click", () => {
     offcanvasMenu.style.transform = "translateX(0)";
   }
 });
+AOS.init();

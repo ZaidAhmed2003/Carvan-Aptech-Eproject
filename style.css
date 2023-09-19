@@ -265,7 +265,21 @@ body {
 
 /* ---xxxxxxxxxxxxx-------- Navbar EnD --------xxxxxxxxxxxx--- */
 
-/* ------------------------------------------- Footer----------------------------------------------- */
+/* Headline Section */
+
+.headline {
+  background-color: var(--black);
+  color: var(--secondary-one);
+  overflow-x: hidden;
+}
+
+.marquee-text {
+  font-size: 1.5rem;
+  margin-inline: 2.5rem;
+  text-transform: uppercase;
+}
+
+/* ------------ Footer------------- */
 
 .footer {
   background-color: var(--footer);
@@ -360,6 +374,10 @@ body {
 
   .fa-user {
     font-size: initial;
+  }
+  .marquee-text {
+    font-size: 3rem;
+    margin-inline: 5rem;
   }
 }
 
