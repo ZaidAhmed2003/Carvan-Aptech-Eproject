@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="description" content="">    // Find Content            -->
+    <title>CARVAN | Your Ultimate Destination for All Cars!</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- ------------------ Navbar ------------------ -->
+    <div class="navbar py-2 px-2">
+      <nav class="d-flex justify-content-between align-items-center">
+        <button
+          class="menu d-flex d-xl-none align-items-center justify-content-between"
+          onclick="this.classList.toggle('opened')"
+        >
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+
+        <div class="navbar-left d-flex">
+          <div class="logo">
+            <a href="../index.html"
+              ><img src="../assets/images/logo.png" alt="Carvan Logo"
+            /></a>
+          </div>
+          <div class="navbar-links d-none d-xl-flex align-items-center">
+            <ul class="d-flex">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./brands.html">Brands</a></li>
+              <li><a href="./rangeofcars.html">Range of Cars</a></li>
+              <li><a href="./preowned.html">PreOwned Cars</a></li>
+              <li><a href="./Contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="navbar-right d-flex align-items-center">
+          <div class="d-flex align-items-center">
+            <div class="d-flex login-btn align-items-center">
+              <i class="fa-solid fa-user"></i>
+              <a class="px-2 login d-none d-xl-block" href="">Login</a>
+            </div>
+            <a class="ps-2 signup-btn d-none d-xl-block" href="">Signup</a>
+          </div>
+          <div class="navbar-btn d-none d-xl-block ms-3">
+            <a href="./addlisting.html" class="btn btn-primary">
+              <i class="fa-solid fa-plus"></i> Add Listing
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="navbar-offcanvas d-flex d-xl-none row">
+      <div class="canvas-btn d-flex align-items-center">
+        <a href="./addlisting.html" class="btn btn-primary">
+          <i class="fa-solid fa-plus"></i> Add Listing
+        </a>
+      </div>
+
+      <div class="navbar-links mt-5">
+        <ul class="row g-4">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./brands.html">Brands</a></li>
+          <li><a href="./rangeofcars.html">Range of Cars</a></li>
+          <li><a href="./preowned.html">PreOwned Cars</a></li>
+          <li><a href="./Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center offcanvas-btns">
+        <div class="d-flex login-btn align-items-center">
+          <i class="fa-solid fa-user"></i>
+          <a class="px-2 login offcanvas-login-btn" href="#">Login</a>
+        </div>
+        <a class="ps-2 signup-btn offcanvas-signup-btn" href="#">Signup</a>
+      </div>
+    </div>
+
+    <!-- -------------------- Footer -------------------- -->
+    <section class="headline container-fluid p-3">
+      <marquee behavior="alternate" direction="left">
+        <div class="d-inline-flex align-items-center">
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-circle"></i>
+            <span class="marquee-text">Suv</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-circle"></i>
+            <span class="marquee-text">Sedan</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-circle"></i>
+            <span class="marquee-text">Convertible</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-circle"></i>
+            <span class="marquee-text">Hatchback</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-circle"></i>
+            <span class="marquee-text">Sports</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-circle"></i>
+            <span class="marquee-text">Coupe</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-circle"></i>
+            <span class="marquee-text">Jeep</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="fa-solid fa-circle"></i>
+            <span class="marquee-text">Crossover</span>
+          </div>
+        </div>
+      </marquee>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top row">
+          <div class="footer__about col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+            <h4 class="mb-3">About Carvan</h4>
+            <p>
+              CARVAN is your trusted source for all things automotive. We
+              provide detailed information about a wide range of cars and offer
+              a unique selection of preowned vehicles with character and
+              history. Explore the world of automobiles with us!
+            </p>
+          </div>
+          <div class="footer__contact col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+            <h4 class="mb-3">Contact Info</h4>
+            <div class="footer__contact__info row g-2">
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-md-start"
+              >
+                <i class="fa-solid fa-location-dot me-2"></i>
+                <span>08 W 36th St, New York, NY 10001 </span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-md-start"
+              >
+                <i class="fa-solid fa-phone me-2"></i>
+                <span>+1 333 9296</span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-md-start"
+              >
+                <i class="fa-regular fa-envelope me-2"></i
+                ><span>contact@carvan.com</span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-md-start"
+              >
+                <i class="fa-solid fa-file-pdf me-2"></i
+                ><span>Download Brochure</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer__links col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+            <h4 class="mb-3">Quick Links</h4>
+            <ul class="footer__links__list row g-2">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About US</a></li>
+              <li><a href="./brands.html">Brands</a></li>
+              <li><a href="./rangeofcars.html">Range of Cars</a></li>
+              <li><a href="./preowned.html">PreOwned Cars</a></li>
+              <li><a href="./Contact.html">Contact US</a></li>
+            </ul>
+          </div>
+          <div
+            class="footer__social col-12 col-md-6 col-lg-3 mt-5 mt-lg-0 mb-5 mb-md-0"
+          >
+            <h4 class="mb-3">Social Network</h4>
+            <div
+              class="footer__social__icons d-flex justify-content-center justify-content-md-start"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center p-2 me-2"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center p-2 me-2"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center p-2 me-2"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center p-2 me-2"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="d-flex align-items-center justify-content-center p-2">
+                <i class="fa-brands fa-pinterest"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div
+          class="footer__bottom d-md-flex align-items-center justify-content-between py-3"
+        >
+          <span>Copyright © 2023 CARVAN. All Rights Reserved.</span>
+          <div class="d-md-flex mt-4 mt-md-0">
+            <p>Terms & Comditions</p>
+            <p class="ms-3 mt-1 mt-md-0">Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../index.js"></script>
+  </body>
+</html>
