@@ -137,6 +137,11 @@ body {
   font-size: 25px;
 }
 
+.fa-plus {
+  font-size: var(--fs-para);
+  margin-right: 0.25rem;
+}
+
 /* Menu Button */
 .menu {
   background-color: transparent;
