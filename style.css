@@ -2,9 +2,10 @@
 
 :root {
   /* Colors */
+  --footer: #151515;
   --black: #000;
   --white: #fff;
-  --primary-one: #ffffff;
+  --primary-one: #cacaca;
   --secondary-one: #1ecb15;
   --secondary-two: #2cb625;
   /* Font Family */
@@ -12,7 +13,7 @@
   --font-secondary: "Inter", sans-serif;
   /* Font Sizes */
   --fs-para: 1rem;
-  --fs-links: 1.25rem;
+  --fs-links: 1.125rem;
   /* Font Weight */
   --fw-light: 300;
   --fw-reguler: 400;
@@ -112,6 +113,11 @@ body {
 }
 
 /* Signup and Login Buttons */
+
+.login {
+  border-right: solid 1px var(--primary-one);
+}
+
 .signup-btn,
 .login-btn a {
   font-size: var(--fs-para);
@@ -126,9 +132,9 @@ body {
 }
 
 /* User Icon */
-.user-icon {
-  font-size: 30px;
+.fa-user {
   color: var(--secondary-one);
+  font-size: 25px;
 }
 
 /* Menu Button */
@@ -136,9 +142,9 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  width: 50px;
   height: 50px;
   outline: none;
+  width: 50px;
   z-index: 99;
 }
 
@@ -196,22 +202,22 @@ body {
 
 /* Logo Styles */
 .logo a img {
-  height: 50px;
+  height: 45px;
 }
 
 /* Off-canvas Menu Styles */
 .navbar-offcanvas {
+  background-color: #000000da;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
   padding-left: 2rem;
   position: fixed;
-  overflow-y: scroll;
   top: 0;
-  left: 0;
-  height: 100%;
-  width: 300px;
-  background-color: #000000da;
-  z-index: 2;
   transform: translateX(-300px);
   transition: transform 0.3s;
+  width: 300px;
+  z-index: 2;
 }
 
 .offcanvas-login-btn,
@@ -231,44 +237,111 @@ body {
   margin-top: 5rem;
 }
 
+/* Hide the scrollbar for webkit browsers (Chrome, Safari) */
+.navbar-offcanvas::-webkit-scrollbar {
+  width: 0.2rem; /* Adjust as needed to match your design */
+}
+
+/* Hide the scrollbar thumb for webkit browsers */
+.navbar-offcanvas::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Hide the scrollbar track for webkit browsers */
+.navbar-offcanvas::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Hide the scrollbar for Firefox */
+.navbar-offcanvas {
+  scrollbar-width: none;
+}
+
+/* Hide the scrollbar for Internet Explorer and Edge */
+.navbar-offcanvas {
+  -ms-overflow-style: none;
+}
+
 /* ---xxxxxxxxxxxxx-------- Navbar EnD --------xxxxxxxxxxxx--- */
 
-/* Media Queries (Mobile-First) */
-@media screen and (min-width: 576px) {
-  /* Add mobile-specific styles here */
+/* ------------------------------------------- Footer----------------------------------------------- */
+
+.footer {
+  background-color: var(--footer);
+  color: var(--white);
+  text-align: center;
 }
+.footer__top {
+  padding-block: 5rem;
+}
+.footer__about {
+  padding-right: 2rem;
+}
+
+.footer__contact__info div i,
+.footer__icon {
+  color: var(--secondary-one);
+}
+
+.footer__about p,
+.footer__links__list li a {
+  color: var(--primary-one);
+}
+
+.footer__bottom div p:hover,
+.footer__contact__info span:nth-child(2):hover,
+.footer__links__list li a:hover {
+  cursor: pointer;
+  color: var(--secondary-two);
+  transition: 0.2s;
+}
+
+.footer__social__icons div {
+  color: var(--secondary-two);
+  background-color: var(--white);
+  height: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  font-size: 1.25rem;
+}
+
+.footer__social__icons div:hover {
+  color: var(--white);
+  background-color: var(--secondary-two);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* ---xxxxxxxxxxxxx-------- Footer EnD --------xxxxxxxxxxxx--- */
+
+/*----------------------------------------- Media Queries (Mobile-First) --------------------------------------*/
+
+/* XS */
+
+@media screen and (min-width: 576px) {
+}
+
+/* MD */
 
 @media screen and (min-width: 768px) {
-  /* Add tablet-specific styles here */
+  .footer__contact,
+  .footer__about,
+  .footer__links,
+  .footer__social {
+    text-align: start;
+  }
 }
+
+/* LG */
 
 @media screen and (min-width: 992px) {
-  /* Add desktop-specific styles here */
 }
+
+/* XL */
 
 @media screen and (min-width: 1200px) {
-  /* Add large desktop-specific styles here */
-}
-
-@media screen and (min-width: 1336px) {
-  /* --------- Navbar -------- */
-  .nav-btn,
-  .navbar-links {
-    display: flex !important;
-  }
-
-  .menu {
-    display: none !important;
-  }
-
   .logo a img {
-    margin-right: 4rem;
-  }
-
-  .navbar-btn,
-  .login,
-  .signup-btn {
-    display: block !important;
+    margin-right: 2rem;
   }
 
   .navbar-links ul li a.active::after {
@@ -284,12 +357,13 @@ body {
     font-size: var(--fs-links);
   }
 
-  .navbar-offcanvas {
-    display: none !important;
+  .fa-user {
+    font-size: initial;
   }
 }
 
+/* XXL */
+
 @media screen and (min-width: 1400px) {
-  /* Add very large desktop-specific styles here */
 }
 /* ------------------------------------ Media Queries ---------------------------------- */

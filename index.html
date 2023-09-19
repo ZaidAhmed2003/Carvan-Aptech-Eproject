@@ -14,7 +14,10 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -25,7 +28,7 @@
       <div class="navbar py-2 px-2">
         <nav class="d-flex justify-content-between align-items-center">
           <button
-            class="menu d-flex align-items-center justify-content-between"
+            class="menu d-flex d-xl-none align-items-center justify-content-between"
             onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
             aria-label="Main Menu"
           >
@@ -44,11 +47,11 @@
 
           <div class="navbar-left d-flex">
             <div class="logo">
-              <a href="#"
+              <a href="./index.html"
                 ><img src="./assets/images/logo.png" alt="Carvan Logo"
               /></a>
             </div>
-            <div class="navbar-links d-none align-items-center">
+            <div class="navbar-links d-none d-xl-flex align-items-center">
               <ul class="d-flex">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./pages/about.html">About Us</a></li>
@@ -63,33 +66,33 @@
           <div class="navbar-right d-flex align-items-center">
             <div class="d-flex align-items-center">
               <div class="d-flex login-btn align-items-center">
-                <span
-                  class="user-icon d-flex align-items-center material-symbols-outlined"
-                >
-                  person
-                </span>
-                <a class="px-2 login d-none" href="">Login</a>
+                <i class="fa-solid fa-user"></i>
+                <a class="px-2 login d-none d-xl-block" href="">Login</a>
               </div>
-              <a class="ps-2 signup-btn d-none" href="">Signup</a>
+              <a class="ps-2 signup-btn d-none d-xl-block" href="">Signup</a>
             </div>
-            <div class="navbar-btn d-none ms-3">
-              <button class="d-flex btn align-items-center">
-                <span class="material-symbols-outlined"> add </span>Add Listing
-              </button>
+            <div class="navbar-btn d-none d-xl-block ms-3">
+              <a href="./pages/addlisting.html">
+                <button class="d-flex btn align-items-center">
+                  <span class="material-symbols-outlined"> add </span>Add
+                  Listing
+                </button>
+              </a>
             </div>
           </div>
         </nav>
       </div>
-
-      <div class="navbar-offcanvas d-flex row">
+      <div class="navbar-offcanvas d-flex d-xl-none row">
         <div class="canvas-btn d-block">
-          <button class="d-flex btn" id="add-listing-btn">
-            <span class="material-symbols-outlined">add</span>Add Listing
-          </button>
+          <a href="./pages/addlisting.html">
+            <button class="d-flex btn">
+              <span class="material-symbols-outlined">add</span>Add Listing
+            </button>
+          </a>
         </div>
         <div class="navbar-links mt-5">
           <ul class="row g-4">
-            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./pages/about.html">About Us</a></li>
             <li><a href="./pages/brands.html">Brands</a></li>
             <li><a href="./pages/rangeofcars.html">Range of Cars</a></li>
@@ -99,16 +102,12 @@
         </div>
         <div class="d-flex align-items-center offcanvas-btns">
           <div class="d-flex login-btn align-items-center">
-            <span
-              class="user-icon d-flex align-items-center material-symbols-outlined"
-              >person</span
-            >
+            <i class="fa-solid fa-user"></i>
             <a class="px-2 login offcanvas-login-btn" href="#">Login</a>
           </div>
           <a class="ps-2 signup-btn offcanvas-signup-btn" href="#">Signup</a>
         </div>
       </div>
-      <div class="overlay"></div>
 
       <!----------------- Section Content ---------------->
       <!-- 
@@ -120,63 +119,12 @@
       /> -->
     </header>
 
-    <!------------------------ Main Content ------------------------>
-
-    <!-- <main>
-      <section class="section-one container">
-        <h2>Featured Listings</h2>
-        <div class="row">
-          <div class="card col">
-            <img src="" alt="car-img" />
-            <p>Car Model</p>
-            <p>Description</p>
-            <p>$40</p>
-          </div>
-          <div class="card col">
-            <img src="" alt="car-img" />
-            <p>Car Model</p>
-            <p>Description</p>
-            <p>$40</p>
-          </div>
-          <div class="card col">
-            <img src="" alt="car-img" />
-            <p>Car Model</p>
-            <p>Description</p>
-            <p>$40</p>
-          </div>
-          <div class="card col">
-            <img src="" alt="car-img" />
-            <p>Car Model</p>
-            <p>Description</p>
-            <p>$40</p>
-          </div>
-        </div>
-      </section>
-      <section class="section-two"></section>
-      <section class="section-three"></section>
-      <section class="section-four"></section>
-      <section class="section-five"></section>
-      <section class="section-six"></section>
-    </main> -->
-
-    <!-- -------------------------- Footer -------------------------->
-    <!--<footer class="footer">
-      <div class="container footer-wrapper">
-        <div class="footer-top row d-flex gx-4">
-          <div class="footer-logo col-2">
-            <a href="#">Logo</a>
-          </div>
-          <div class="footer-navlinks col-3">
-            <ul class="row row-cols-2 g-4">
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Brands</a></li>
-              <li><a href="">Range of Cars</a></li>
-              <li><a href="">PreOwned Cars</a></li>
-              <li><a href="">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="footer-description col-3">
+    <!-- -------------------- Footer -------------------- -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top row">
+          <div class="footer__about col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+            <h4 class="mb-3">About Carvan</h4>
             <p>
               CARVAN is your trusted source for all things automotive. We
               provide detailed information about a wide range of cars and offer
@@ -184,55 +132,92 @@
               history. Explore the world of automobiles with us!
             </p>
           </div>
-          <div class="footer-contacts row col-3 offset-1">
-            <p>Lorem, ipsum dolor.</p>
-            <p>Lorem, ipsum dolor.</p>
-            <p>Lorem, ipsum dolor.</p>
-            <p>Lorem, ipsum dolor.</p>
+          <div class="footer__contact col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+            <h4 class="mb-3">Contact Info</h4>
+            <div class="footer__contact__info row g-2">
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-md-start"
+              >
+                <i class="fa-solid fa-location-dot me-2"></i>
+                <span>08 W 36th St, New York, NY 10001 </span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-md-start"
+              >
+                <i class="fa-solid fa-phone me-2"></i>
+                ><span>+1 333 9296</span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-md-start"
+              >
+                <i class="fa-regular fa-envelope me-2"></i
+                ><span>contact@carvan.com</span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-md-start"
+              >
+                <i class="fa-solid fa-file-pdf me-2"></i
+                ><span>Download Brochure</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer__links col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+            <h4 class="mb-3">Quick Links</h4>
+            <ul class="footer__links__list row g-2">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./pages/about.html">About US</a></li>
+              <li><a href="./pages/brands.html">Brands</a></li>
+              <li><a href="./pages/rangeofcars.html">Range of Cars</a></li>
+              <li><a href="./pages/preowned.html">PreOwned Cars</a></li>
+              <li><a href="./pages/Contact.html">Contact US</a></li>
+            </ul>
+          </div>
+          <div
+            class="footer__social col-12 col-md-6 col-lg-3 mt-5 mt-lg-0 mb-5 mb-md-0"
+          >
+            <h4 class="mb-3">Social Network</h4>
+            <div
+              class="footer__social__icons d-flex justify-content-center justify-content-md-start"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center p-2 me-2"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center p-2 me-2"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center p-2 me-2"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-center p-2 me-2"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="d-flex align-items-center justify-content-center p-2">
+                <i class="fa-brands fa-pinterest"></i>
+              </div>
+            </div>
           </div>
         </div>
         <hr />
         <div
-          class="footer-end d-flex justify-content-between align-items-center py-5"
+          class="footer__bottom d-md-flex align-items-center justify-content-between py-3"
         >
-          <div class="footer-copyrights">
-            <p>Copyright &copy; 2023 CARVAN. All Rights Reserved.</p>
-          </div>
-          <div class="footer-social">
-            <ul class="d-flex g-4">
-              <li>
-                <div class="social-icon">
-                  <a href="#"
-                    ><img
-                      src="./assets/images/icons/facebook-icon.svg"
-                      alt="Facebook"
-                  /></a>
-                </div>
-              </li>
-              <li>
-                <div class="social-icon">
-                  <a href="#"
-                    ><img
-                      src="./assets/images/icons/twitter-icon.svg"
-                      alt="Twitter"
-                  /></a>
-                </div>
-              </li>
-              <li>
-                <div class="social-icon">
-                  <a href="#"
-                    ><img
-                      src="./assets/images/icons/instagram-icon.svg"
-                      alt="Instagram"
-                  /></a>
-                </div>
-              </li>
-            </ul>
+          <span>Copyright © 2023 CARVAN. All Rights Reserved.</span>
+          <div class="d-md-flex mt-4 mt-md-0">
+            <p>Terms & Comditions</p>
+            <p class="ms-3 mt-1 mt-md-0">Privacy Policy</p>
           </div>
         </div>
       </div>
     </footer>
-    -->
+
     <script src="index.js"></script>
   </body>
 </html>
