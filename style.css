@@ -5,9 +5,12 @@
   --footer: #151515;
   --black: #000;
   --white: #fff;
-  --primary-one: #cacaca;
-  --secondary-one: #1ecb15;
-  --secondary-two: #2cb625;
+  --heading: #3b3c3f;
+  --description: #e8e8e8;
+  --description-dark: #1d1d1d;
+  --secondary: ;
+  --primary: #1ecb15;
+  --secondary-hover: #fdb801;
   /* Font Family */
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Inter", sans-serif;
@@ -48,7 +51,7 @@ body {
   font-size: var(--fs-links);
   font-weight: var(--fw-medium);
   outline: none;
-  border: 2px solid var(--secondary-one);
+  border: 2px solid var(--primary);
   border-radius: 0.5rem;
   padding: 0.5rem 0.75rem;
   cursor: pointer;
@@ -58,7 +61,7 @@ body {
 
 /* Primary Button */
 .canvas-btn .btn {
-  background-color: var(--secondary-one);
+  background-color: var(--primary);
   color: var(--white);
   margin-top: 6rem;
 }
@@ -71,12 +74,12 @@ body {
 
 .navbar-btn .btn:hover {
   color: var(--white);
-  background-color: var(--secondary-one);
+  background-color: var(--primary);
   transition: 0.2s;
 }
 
 .nav-btn .btn:active {
-  background-color: var(--secondary-two);
+  background-color: var(--primary);
 }
 
 /* Navbar Links */
@@ -87,13 +90,13 @@ body {
 }
 
 .navbar-links ul li a:hover {
-  color: var(--secondary-two);
+  color: var(--primary);
   transition: 0.2s;
 }
 
 .navbar-links ul li a.active {
   position: relative;
-  color: var(--secondary-two);
+  color: var(--primary);
 }
 
 .navbar-links ul li a.active::after {
@@ -104,14 +107,14 @@ body {
   left: 50%;
   width: 5px;
   height: 5px;
-  background-color: var(--secondary-two);
+  background-color: var(--primary);
   border-radius: 50%;
 }
 
 /* Signup and Login Buttons */
 
 .login {
-  border-right: solid 1px var(--primary-one);
+  border-right: solid 1px var(--primary);
 }
 
 .signup-btn,
@@ -123,13 +126,13 @@ body {
 .login:hover,
 .signup-btn:hover,
 .login-btn a:hover {
-  color: var(--secondary-two);
+  color: var(--primary);
   transition: 0.2s;
 }
 
 /* User Icon */
 .fa-user {
-  color: var(--secondary-one);
+  color: var(--primary);
   font-size: 25px;
 }
 
@@ -152,7 +155,7 @@ body {
 /* Menu Lines */
 .line {
   fill: none;
-  stroke: var(--secondary-one);
+  stroke: var(--primary);
   stroke-width: 6;
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -230,7 +233,7 @@ body {
 
 .offcanvas-login-btn:hover,
 .offcanvas-signup-btn:hover {
-  color: var(--secondary-two);
+  color: var(--primary);
   transition: 0.2s;
 }
 
@@ -269,7 +272,7 @@ body {
 
 .headline {
   background-color: var(--black);
-  color: var(--secondary-one);
+  color: var(--primary);
   overflow-x: hidden;
 }
 
@@ -295,24 +298,24 @@ body {
 
 .footer__contact__info div i,
 .footer__icon {
-  color: var(--secondary-one);
+  color: var(--primary);
 }
 
 .footer__about p,
 .footer__links__list li a {
-  color: var(--primary-one);
+  color: var(--description);
 }
 
 .footer__bottom div p:hover,
 .footer__contact__info span:nth-child(2):hover,
 .footer__links__list li a:hover {
   cursor: pointer;
-  color: var(--secondary-two);
+  color: var(--primary);
   transition: 0.2s;
 }
 
 .footer__social__icons div {
-  color: var(--secondary-two);
+  color: var(--primary);
   background-color: var(--white);
   height: 40px;
   aspect-ratio: 1/1;
@@ -322,7 +325,7 @@ body {
 
 .footer__social__icons div:hover {
   color: var(--white);
-  background-color: var(--secondary-two);
+  background-color: var(--primary);
   transition: 0.2s;
   cursor: pointer;
 }
