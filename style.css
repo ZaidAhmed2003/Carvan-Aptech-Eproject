@@ -363,6 +363,7 @@ p {
 }
 .map img {
   width: 100%;
+  height: auto;
   border-radius: var(--border-radius);
 }
 /* Headline Section */
