@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
 :root {
   /* Colors */
   --footer: #151515;
@@ -9,14 +8,19 @@
   --description: #e8e8e8;
   --description-dark: #1d1d1d;
   --secondary: ;
-  --primary: #1ecb15;
+  --primary: #19ad11;
   --secondary-hover: #fdb801;
+  --background-2: #ecebeb;
+
   /* Font Family */
   --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Inter", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
   /* Font Sizes */
-  --fs-para: 1rem;
+  --fs-paragraph: 1rem;
   --fs-links: 1.125rem;
+  --fs-heading-3: 2rem;
+  --fs-heading-2: 3rem;
+  --fs-heading-1: 4.5rem;
   /* Font Weight */
   --fw-light: 300;
   --fw-reguler: 400;
@@ -25,9 +29,11 @@
   --fw-bold: 700;
   --fw-extra-bold: 800;
   /* borders */
-  --border-radius: 4px;
+  --border-radius: 0.5rem;
   /* Shadows */
-  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --btn-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --text-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --primary-shadow: rgba(0, 0, 0, 0.24) 4px 4px 20px;
 }
 
 /* Basic Styles */
@@ -45,6 +51,29 @@ body {
   font-family: var(--font-primary);
 }
 
+h1 {
+  font-size: var(--fs-heading-1);
+  font-weight: var(--fw-extra-bold);
+  font-family: var(--font-secondary);
+}
+
+h2 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-heading-2);
+  font-family: var(--font-secondary);
+}
+h3 {
+  font-size: var(--fs-heading-3);
+}
+
+p {
+  font-weight: 500;
+}
+
+.dark {
+  color: var(--description-dark);
+}
+
 /*  Button Common */
 
 .btn {
@@ -52,9 +81,24 @@ body {
   font-weight: var(--fw-medium);
   outline: none;
   border: 2px solid var(--primary);
-  border-radius: 0.5rem;
-  padding: 0.5rem 0.75rem;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 0.5rem;
   cursor: pointer;
+}
+
+.btn-secondary {
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 0.5rem 2rem;
+}
+
+.btn-primary {
+  color: var(--black);
+  background-color: var(--primary);
+}
+
+.contact__btn {
+  width: 100%;
 }
 
 /* Navbar and Off-canvas Styles */
@@ -211,7 +255,7 @@ body {
 
 /* Off-canvas Menu Styles */
 .navbar-offcanvas {
-  background-color: #000000da;
+  background-color: #000000e7;
   height: 100%;
   left: 0;
   overflow-y: scroll;
@@ -268,6 +312,50 @@ body {
 
 /* ---xxxxxxxxxxxxx-------- Navbar EnD --------xxxxxxxxxxxx--- */
 
+/* ------------------ Contact Us Page ---------------------- */
+.contact {
+  padding-block: 5rem;
+}
+
+.contact__form {
+  color: var(--white);
+  box-shadow: var(--primary-shadow);
+  border-radius: var(--border-radius);
+  background-color: var(--background-2);
+}
+
+.contact__number {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-heading-3);
+}
+.contact__number .green {
+  color: var(--primary);
+}
+
+.privacy {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+#textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 20rem;
+  box-shadow: var(--text-box-shadow);
+  border-radius: var(--border-radius);
+}
+.contact__form .form__group .form__text div input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--text-box-shadow);
+}
+
+.contact__information {
+  text-align: center;
+}
 /* Headline Section */
 
 .headline {
@@ -314,6 +402,7 @@ body {
   transition: 0.2s;
 }
 
+.contact__icons div,
 .footer__social__icons div {
   color: var(--primary);
   background-color: var(--white);
@@ -323,6 +412,7 @@ body {
   font-size: 1.25rem;
 }
 
+.contact__icons div:hover,
 .footer__social__icons div:hover {
   color: var(--white);
   background-color: var(--primary);
@@ -348,11 +438,20 @@ body {
   .footer__social {
     text-align: start;
   }
+  .contact__information {
+    text-align: initial;
+  }
 }
 
 /* LG */
 
 @media screen and (min-width: 992px) {
+  .contact__btn {
+    width: initial;
+  }
+  .contact__information {
+    text-align: initial;
+  }
 }
 
 /* XL */
