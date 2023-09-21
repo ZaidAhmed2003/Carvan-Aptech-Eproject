@@ -35,7 +35,9 @@
   --border-radius: 0.5rem;
 
   /* Shadows */
-  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --btn-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --text-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --primary-shadow: rgba(0, 0, 0, 0.24) 4px 4px 20px;
 }
 
 /* Basic Styles */
