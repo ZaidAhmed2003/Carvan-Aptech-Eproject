@@ -1,0 +1,82 @@
+/* Button */
+.contact__btn {
+  width: 100%;
+}
+
+/* Contact Section */
+.contact {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+/* Contact Form */
+.contact__form {
+  color: var(--white);
+  box-shadow: var(--primary-shadow);
+  border-radius: var(--border-radius);
+  background-color: var(--background-2);
+}
+
+.contact__number {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-heading-3);
+}
+
+.contact__number .green {
+  color: var(--primary);
+}
+
+/* Privacy Link */
+.privacy {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Text Area */
+#textarea,
+.contact__form .form__group .form__text div input {
+  width: 100%;
+
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--text-box-shadow);
+}
+
+#textarea {
+  height: 20rem;
+}
+
+/* Contact Information */
+.contact__information {
+  text-align: center;
+}
+
+/* Map */
+.map {
+  margin-block: 5rem;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+/* Media Queries (Mobile-First) */
+
+@media screen and (min-width: 768px) {
+  .contact__information {
+    text-align: initial;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact__btn {
+    width: initial;
+  }
+
+  .contact__information {
+    text-align: initial;
+  }
+}

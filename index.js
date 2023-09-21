@@ -1,26 +1,27 @@
-// -------------------- Nvabar --------------------------//
-
-// --------------------------- NavLinks ------------------------- //
-
 const currentPage = window.location.href;
-
 const navLinks = document.querySelectorAll(".navbar-links ul li a");
+const navMenuBtn = document.querySelector(".menu");
+const offcanvasMenu = document.querySelector(".navbar-offcanvas");
 
-navLinks.forEach((link) => {
-  if (link.href === currentPage) {
-    link.classList.add("active");
-  }
-});
+// Function to toggle the "no-scroll" class on the body
+function toggleBodyScroll() {
+  document.body.classList.toggle("no-scroll");
+}
 
-// ------------------------- Offcanvas Menu
-
-let navMenuBtn = document.querySelector(".menu");
-let offcanvasMenu = document.querySelector(".navbar-offcanvas");
-
+// Add click event listener to the menu button
 navMenuBtn.addEventListener("click", () => {
   if (!navMenuBtn.classList.contains("opened")) {
     offcanvasMenu.style.transform = "translateX(-300px)";
+    toggleBodyScroll(); // Add the class to disable body scroll
   } else {
     offcanvasMenu.style.transform = "translateX(0)";
+    toggleBodyScroll(); // Remove the class to enable body scroll
+  }
+});
+
+// Add "active" class to current page link
+navLinks.forEach((link) => {
+  if (link.href === currentPage) {
+    link.classList.add("active");
   }
 });

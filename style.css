@@ -8,7 +8,6 @@
   --heading: #3b3c3f;
   --description: #e8e8e8;
   --description-dark: #1d1d1d;
-  --secondary: ;
   --primary: #19ad11;
   --secondary-hover: #fdb801;
   --background-2: #ecebeb;
@@ -16,25 +15,27 @@
   /* Font Family */
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
+
   /* Font Sizes */
   --fs-paragraph: 1rem;
   --fs-links: 1.125rem;
-  --fs-heading-3: 2rem;
-  --fs-heading-2: 3rem;
-  --fs-heading-1: 4.5rem;
+  --fs-heading: 2rem;
+  --fs-subheading: 3rem;
+  --fs-title: 4.5rem;
+
   /* Font Weight */
   --fw-light: 300;
-  --fw-reguler: 400;
+  --fw-regular: 400;
   --fw-medium: 500;
-  --fw-semi-bold: 600;
+  --fw-semibold: 600;
   --fw-bold: 700;
   --fw-extra-bold: 800;
-  /* borders */
+
+  /* Borders */
   --border-radius: 0.5rem;
+
   /* Shadows */
-  --btn-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  --text-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  --primary-shadow: rgba(0, 0, 0, 0.24) 4px 4px 20px;
+  --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* Basic Styles */
@@ -50,56 +51,52 @@
 
 body {
   font-family: var(--font-primary);
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: var(--fs-heading-1);
+  font-size: var(--fs-title);
   font-weight: var(--fw-extra-bold);
   font-family: var(--font-secondary);
 }
 
 h2 {
   font-weight: var(--fw-bold);
-  font-size: var(--fs-heading-2);
+  font-size: var(--fs-subheading);
   font-family: var(--font-secondary);
 }
+
 h3 {
-  font-size: var(--fs-heading-3);
+  font-size: var(--fs-heading);
 }
 
 p {
-  font-weight: 500;
+  font-weight: var(--fw-medium);
 }
 
 .dark {
   color: var(--description-dark);
 }
 
-/*  Button Common */
-
+/* Button Common */
 .btn {
   font-size: var(--fs-links);
   font-weight: var(--fw-medium);
   outline: none;
   border: 2px solid var(--primary);
   border-radius: var(--border-radius);
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 2rem;
   cursor: pointer;
 }
 
 .btn-secondary {
   color: var(--white);
   background-color: var(--primary);
-  padding: 0.5rem 2rem;
 }
 
 .btn-primary {
   color: var(--black);
   background-color: var(--primary);
-}
-
-.contact__btn {
-  width: 100%;
 }
 
 /* Navbar and Off-canvas Styles */
@@ -130,7 +127,7 @@ p {
 /* Navbar Links */
 .navbar-links ul li a {
   color: var(--white);
-  font-weight: var(--fw-semi-bold);
+  font-weight: var(--fw-semibold);
   font-size: var(--fs-links);
 }
 
@@ -145,7 +142,6 @@ p {
 }
 
 .navbar-links ul li a.active::after {
-  display: none;
   content: "";
   position: absolute;
   bottom: -10px;
@@ -154,17 +150,17 @@ p {
   height: 5px;
   background-color: var(--primary);
   border-radius: 50%;
+  display: none;
 }
 
 /* Signup and Login Buttons */
-
 .login {
   border-right: solid 1px var(--primary);
 }
 
 .signup-btn,
 .login-btn a {
-  font-size: var(--fs-para);
+  font-size: var(--fs-paragraph);
   color: var(--black);
 }
 
@@ -182,7 +178,7 @@ p {
 }
 
 .fa-plus {
-  font-size: var(--fs-para);
+  font-size: var(--fs-paragraph);
   margin-right: 0.25rem;
 }
 
@@ -198,7 +194,10 @@ p {
 }
 
 /* Menu Lines */
-.line {
+.line,
+.line1,
+.line2,
+.line3 {
   fill: none;
   stroke: var(--primary);
   stroke-width: 6;
@@ -257,6 +256,8 @@ p {
 /* Off-canvas Menu Styles */
 .navbar-offcanvas {
   background-color: #000000e7;
+  color: var(--white);
+  text-align: start;
   height: 100%;
   left: 0;
   overflow-y: scroll;
@@ -267,6 +268,10 @@ p {
   transition: transform 0.3s;
   width: 300px;
   z-index: 2;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .offcanvas-login-btn,
@@ -311,63 +316,7 @@ p {
   -ms-overflow-style: none;
 }
 
-/* ---xxxxxxxxxxxxx-------- Navbar EnD --------xxxxxxxxxxxx--- */
-
-/* ------------------ Contact Us Page ---------------------- */
-.contact {
-  margin-block: 5rem;
-}
-
-.contact__form {
-  color: var(--white);
-  box-shadow: var(--primary-shadow);
-  border-radius: var(--border-radius);
-  background-color: var(--background-2);
-}
-
-.contact__number {
-  font-weight: var(--fw-bold);
-  font-size: var(--fs-heading-3);
-}
-.contact__number .green {
-  color: var(--primary);
-}
-
-.privacy {
-  color: var(--primary);
-  text-decoration: underline;
-}
-
-#textarea {
-  width: 100%;
-  outline: none;
-  border: none;
-  height: 20rem;
-  box-shadow: var(--text-box-shadow);
-  border-radius: var(--border-radius);
-}
-.contact__form .form__group .form__text div input {
-  width: 100%;
-  outline: none;
-  border: none;
-  border-radius: var(--border-radius);
-  box-shadow: var(--text-box-shadow);
-}
-
-.contact__information {
-  text-align: center;
-}
-
-.map {
-  margin-block: 5rem;
-}
-.map img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--border-radius);
-}
 /* Headline Section */
-
 .headline {
   background-color: var(--black);
   color: var(--primary);
@@ -380,16 +329,14 @@ p {
   text-transform: uppercase;
 }
 
-/* ------------ Footer------------- */
-
+/* Footer */
 .footer {
   background-color: var(--footer);
   color: var(--white);
   text-align: center;
-}
-.footer__top {
   padding-block: 5rem;
 }
+
 .footer__about {
   padding-right: 2rem;
 }
@@ -427,19 +374,11 @@ p {
   color: var(--white);
   background-color: var(--primary);
   transition: 0.2s;
-  cursor: pointer;
 }
 
-/* ---xxxxxxxxxxxxx-------- Footer EnD --------xxxxxxxxxxxx--- */
-
-/*----------------------------------------- Media Queries (Mobile-First) --------------------------------------*/
-
-/* XS */
-
+/* Media Queries (Mobile-First) */
 @media screen and (min-width: 576px) {
 }
-
-/* MD */
 
 @media screen and (min-width: 768px) {
   .footer__contact,
@@ -448,25 +387,9 @@ p {
   .footer__social {
     text-align: start;
   }
-  .contact__information {
-    text-align: initial;
-  }
 }
-
-/* LG */
 
 @media screen and (min-width: 992px) {
-  .contact__btn {
-    width: initial;
-  }
-  .contact__information {
-    text-align: initial;
-  }
-}
-
-/* XL */
-
-@media screen and (min-width: 1200px) {
   .logo a img {
     margin-right: 2rem;
   }
@@ -487,13 +410,12 @@ p {
   .fa-user {
     font-size: initial;
   }
+
   .marquee-text {
     font-size: 3rem;
     margin-inline: 5rem;
   }
 }
-
-/* XXL */
 
 @media screen and (min-width: 1400px) {
 }
