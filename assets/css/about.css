@@ -47,6 +47,19 @@
   position: relative;
 }
 
+.card__date {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  background-color: var(--primary);
+  color: var(--white);
+  width: 50px;
+  font-weight: var(--fw-bold);
+}
+.card__day {
+  font-size: 32px;
+}
+
 .cards img {
   width: 100%;
   z-index: -1;
