@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <meta name="description" content="">    // Find Content   -->
+    <meta
+      name="description"
+      content="CARVAN | Your Ultimate Destination for All Cars!"
+    />
     <title>CARVAN | Your Ultimate Destination for All Cars!</title>
     <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="../assets/css/normalize.css" />
@@ -30,7 +33,7 @@
     <div class="navbar py-2 px-2">
       <nav class="d-flex justify-content-between align-items-center">
         <button
-          class="menu d-flex d-xl-none align-items-center justify-content-between"
+          class="navbar__menu d-flex d-xl-none align-items-center justify-content-between"
           onclick="this.classList.toggle('opened')"
         >
           <svg width="50" height="50" viewBox="0 0 100 100">
@@ -46,13 +49,13 @@
           </svg>
         </button>
 
-        <div class="navbar-left d-flex">
-          <div class="logo">
+        <div class="d-flex">
+          <div class="navbar__logo">
             <a href="../index.html"
               ><img src="../assets/images/logo.png" alt="Carvan Logo"
             /></a>
           </div>
-          <div class="navbar-links d-none d-xl-flex align-items-center">
+          <div class="navbar__links d-none d-xl-flex align-items-center">
             <ul class="d-flex">
               <li><a href="../index.html">Home</a></li>
               <li><a href="./about.html">About Us</a></li>
@@ -64,7 +67,7 @@
           </div>
         </div>
 
-        <div class="navbar-right d-flex align-items-center">
+        <div class="d-flex align-items-center">
           <div class="d-flex align-items-center">
             <div class="d-flex login-btn align-items-center">
               <i class="fa-solid fa-user"></i>
@@ -72,7 +75,7 @@
             </div>
             <a class="ps-2 signup-btn d-none d-xl-block" href="">Signup</a>
           </div>
-          <div class="navbar-btn d-none d-xl-block ms-3">
+          <div class="navbar__btn d-none d-xl-block ms-3">
             <a href="./addlisting.html" class="btn btn-primary">
               <i class="fa-solid fa-plus"></i> Add Listing
             </a>
@@ -83,13 +86,13 @@
 
     <!-- Off Canvas -->
 
-    <div class="navbar-offcanvas d-flex d-xl-none row">
+    <div class="navbar__offcanvas d-flex d-xl-none row">
       <div class="canvas-btn d-flex align-items-center">
         <a href="./addlisting.html" class="btn btn-primary">
           <i class="fa-solid fa-plus"></i> Add Listing
         </a>
       </div>
-      <div class="navbar-links mt-5">
+      <div class="navbar__links mt-5">
         <ul class="row g-4">
           <li><a href="../index.html">Home</a></li>
           <li><a href="./about.html">About Us</a></li>

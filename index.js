@@ -1,7 +1,7 @@
 const currentPage = window.location.href;
-const navLinks = document.querySelectorAll(".navbar-links ul li a");
-const navMenuBtn = document.querySelector(".menu");
-const offcanvasMenu = document.querySelector(".navbar-offcanvas");
+const navLinks = document.querySelectorAll(".navbar__links ul li a");
+const navMenuBtn = document.querySelector(".navbar__menu");
+const offcanvasMenu = document.querySelector(".navbar__offcanvas");
 
 // Function to toggle the "no-scroll" class on the body
 function toggleBodyScroll() {

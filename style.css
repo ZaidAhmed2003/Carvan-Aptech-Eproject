@@ -109,39 +109,39 @@ p {
 }
 
 /* Secondary Button */
-.navbar-btn .btn {
+.navbar__btn .btn {
   color: var(--black);
   background-color: transparent;
 }
 
-.navbar-btn .btn:hover {
+.navbar__btn .btn:hover {
   color: var(--white);
   background-color: var(--primary);
   transition: 0.2s;
 }
 
-.nav-btn .btn:active {
+.navbar__btn .btn:active {
   background-color: var(--primary);
 }
 
 /* Navbar Links */
-.navbar-links ul li a {
+.navbar__links ul li a {
   color: var(--white);
   font-weight: var(--fw-semibold);
   font-size: var(--fs-links);
 }
 
-.navbar-links ul li a:hover {
+.navbar__links ul li a:hover {
   color: var(--primary);
   transition: 0.2s;
 }
 
-.navbar-links ul li a.active {
+.navbar__links ul li a.active {
   position: relative;
   color: var(--primary);
 }
 
-.navbar-links ul li a.active::after {
+.navbar__links ul li a.active::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -171,7 +171,7 @@ p {
   transition: 0.2s;
 }
 
-/* User Icon */
+/*  Icons */
 .fa-user {
   color: var(--primary);
   font-size: 25px;
@@ -183,7 +183,7 @@ p {
 }
 
 /* Menu Button */
-.menu {
+.navbar__menu {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -249,12 +249,12 @@ p {
 }
 
 /* Logo Styles */
-.logo a img {
+.navbar__logo a img {
   height: 45px;
 }
 
 /* Off-canvas Menu Styles */
-.navbar-offcanvas {
+.navbar__offcanvas {
   background-color: #000000e7;
   color: var(--white);
   text-align: start;
@@ -292,27 +292,27 @@ p {
 }
 
 /* Hide the scrollbar for webkit browsers (Chrome, Safari) */
-.navbar-offcanvas::-webkit-scrollbar {
+.navbar__offcanvas::-webkit-scrollbar {
   width: 0.2rem; /* Adjust as needed to match your design */
 }
 
 /* Hide the scrollbar thumb for webkit browsers */
-.navbar-offcanvas::-webkit-scrollbar-thumb {
+.navbar__offcanvas::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
 
 /* Hide the scrollbar track for webkit browsers */
-.navbar-offcanvas::-webkit-scrollbar-track {
+.navbar__offcanvas::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
 /* Hide the scrollbar for Firefox */
-.navbar-offcanvas {
+.navbar__offcanvas {
   scrollbar-width: none;
 }
 
 /* Hide the scrollbar for Internet Explorer and Edge */
-.navbar-offcanvas {
+.navbar__offcanvas {
   -ms-overflow-style: none;
 }
 
@@ -390,20 +390,20 @@ p {
 }
 
 @media screen and (min-width: 992px) {
-  .logo a img {
+  .navbar__logo a img {
     margin-right: 2rem;
   }
 
-  .navbar-links ul li a.active::after {
+  .navbar__links ul li a.active::after {
     display: block;
   }
 
-  .navbar-links ul li a {
+  .navbar__links ul li a {
     margin-right: 1.5rem;
     color: var(--black);
   }
 
-  .navbar-links {
+  .navbar__links {
     font-size: var(--fs-links);
   }
 
