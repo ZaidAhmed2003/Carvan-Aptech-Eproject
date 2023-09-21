@@ -12,10 +12,10 @@ function toggleBodyScroll() {
 navMenuBtn.addEventListener("click", () => {
   if (!navMenuBtn.classList.contains("opened")) {
     offcanvasMenu.style.transform = "translateX(-300px)";
-    toggleBodyScroll(); // Add the class to disable body scroll
+    toggleBodyScroll();
   } else {
     offcanvasMenu.style.transform = "translateX(0)";
-    toggleBodyScroll(); // Remove the class to enable body scroll
+    toggleBodyScroll();
   }
 });
 

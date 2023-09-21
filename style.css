@@ -22,6 +22,7 @@
   --fs-heading: 2rem;
   --fs-subheading: 3rem;
   --fs-title: 4.5rem;
+  --fs-subsubheading: 1.25rem;
 
   /* Font Weight */
   --fw-light: 300;
@@ -37,7 +38,7 @@
   /* Shadows */
   --btn-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --text-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  --primary-shadow: rgba(0, 0, 0, 0.24) 4px 4px 20px;
+  --primary-shadow: rgba(0, 0, 0, 0.24) 0px 4px 12px;
 }
 
 /* Basic Styles */
@@ -72,6 +73,10 @@ h3 {
   font-size: var(--fs-heading);
 }
 
+h4 {
+  font-size: var(--fs-subsubheading);
+}
+
 p {
   font-weight: var(--fw-medium);
 }
@@ -80,7 +85,13 @@ p {
   color: var(--description-dark);
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Button Common */
+
 .btn {
   font-size: var(--fs-links);
   font-weight: var(--fw-medium);
@@ -98,12 +109,13 @@ p {
 
 .btn-primary {
   color: var(--black);
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
 }
 
 /* Navbar and Off-canvas Styles */
 
 /* Primary Button */
+
 .canvas-btn .btn {
   background-color: var(--primary);
   color: var(--white);
@@ -111,6 +123,7 @@ p {
 }
 
 /* Secondary Button */
+
 .navbar__btn .btn {
   color: var(--black);
   background-color: transparent;
@@ -127,6 +140,7 @@ p {
 }
 
 /* Navbar Links */
+
 .navbar__links ul li a {
   color: var(--white);
   font-weight: var(--fw-semibold);
@@ -156,6 +170,7 @@ p {
 }
 
 /* Signup and Login Buttons */
+
 .login {
   border-right: solid 1px var(--primary);
 }
@@ -174,6 +189,7 @@ p {
 }
 
 /*  Icons */
+
 .fa-user {
   color: var(--primary);
   font-size: 25px;
@@ -185,6 +201,7 @@ p {
 }
 
 /* Menu Button */
+
 .navbar__menu {
   background-color: transparent;
   border: none;
@@ -196,6 +213,7 @@ p {
 }
 
 /* Menu Lines */
+
 .line,
 .line1,
 .line2,
@@ -226,6 +244,7 @@ p {
 }
 
 /* Opened Menu Lines */
+
 .opened .line1,
 .opened .line2,
 .opened .line3 {
@@ -246,16 +265,19 @@ p {
 }
 
 /* Navbar Styles */
+
 .navbar {
-  box-shadow: var(--shadow);
+  box-shadow: var(--primary-shadow);
 }
 
 /* Logo Styles */
+
 .navbar__logo a img {
   height: 45px;
 }
 
 /* Off-canvas Menu Styles */
+
 .navbar__offcanvas {
   background-color: #000000e7;
   color: var(--white);
@@ -280,7 +302,7 @@ p {
 .offcanvas-signup-btn {
   color: var(--white) !important;
   font-weight: var(--fw-medium);
-  font-size: 1rem; /* Adjust font size here */
+  font-size: 1rem;
 }
 
 .offcanvas-login-btn:hover,
@@ -295,7 +317,7 @@ p {
 
 /* Hide the scrollbar for webkit browsers (Chrome, Safari) */
 .navbar__offcanvas::-webkit-scrollbar {
-  width: 0.2rem; /* Adjust as needed to match your design */
+  width: 0.2rem;
 }
 
 /* Hide the scrollbar thumb for webkit browsers */
@@ -319,6 +341,7 @@ p {
 }
 
 /* Headline Section */
+
 .headline {
   background-color: var(--black);
   color: var(--primary);
@@ -332,11 +355,16 @@ p {
 }
 
 /* Footer */
+
 .footer {
   background-color: var(--footer);
   color: var(--white);
   text-align: center;
-  padding-block: 5rem;
+  padding-top: 5rem;
+}
+
+.footer__top {
+  margin-bottom: 5rem;
 }
 
 .footer__about {
@@ -376,9 +404,11 @@ p {
   color: var(--white);
   background-color: var(--primary);
   transition: 0.2s;
+  cursor: pointer;
 }
 
 /* Media Queries (Mobile-First) */
+
 @media screen and (min-width: 576px) {
 }
 
@@ -414,9 +444,12 @@ p {
   }
 
   .marquee-text {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-inline: 5rem;
   }
+}
+
+@media screen and (min-width: 1200px) {
 }
 
 @media screen and (min-width: 1400px) {

@@ -19,7 +19,7 @@
 
 .contact__number {
   font-weight: var(--fw-bold);
-  font-size: var(--fs-heading-3);
+  font-size: var(--fs-heading);
 }
 
 .contact__number .green {

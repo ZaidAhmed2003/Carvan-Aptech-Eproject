@@ -1,0 +1,79 @@
+/* About Section */
+
+.about__info {
+  text-align: center;
+}
+
+.about__img img {
+  border-radius: var(--border-radius);
+}
+
+/* Stats Section */
+
+.stats__number__main {
+  font-size: 120px;
+  font-weight: var(--fw-extra-bold);
+}
+
+.stats__text__main {
+  font-size: var(--fs-subheading);
+}
+
+.stats__number__sub {
+  font-size: var(--fs-title);
+}
+.stats__text__main,
+.stats__number__sub,
+.stats__text__sub {
+  font-weight: var(--fw-bold);
+}
+
+.stats__text__sub,
+.stats__number__main {
+  color: var(--primary);
+}
+
+.stats__text__sub {
+  font-family: var(--font-secondary);
+}
+
+/* Events Section */
+.news__titles,
+.news__top {
+  text-align: center;
+}
+
+.cards {
+  position: relative;
+}
+
+.cards img {
+  width: 100%;
+  z-index: -1;
+  border-radius: var(--border-radius);
+}
+
+.card__text {
+  position: relative;
+  background-color: var(--white);
+  top: -40px;
+  left: 10%;
+  box-shadow: var(--btn-shadow);
+  border-radius: var(--border-radius);
+  z-index: 1;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 992px) {
+  .news__titles,
+  .about__info {
+    text-align: start;
+  }
+  .card__text {
+    left: 12%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
