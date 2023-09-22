@@ -134,7 +134,11 @@
             class="dark d-flex align-items-center justify-content-center justify-content-md-start mb-5"
           >
             <i class="fa-regular fa-envelope me-2 footer__icon"></i>
-            <p>support@carvan.com</p>
+            <p>
+              <a class="dark" href="mailto:support@carvan.com"
+                >support@carvan.com</a
+              >
+            </p>
           </div>
 
           <div class="d-md-flex align-items-center">
@@ -172,13 +176,18 @@
           <form class="form__group p-4">
             <div class="form__text row g-3">
               <div class="col-md-6 col-xl-6 col-xxl-4">
-                <input class="p-3" type="text" placeholder="Name" />
+                <input class="p-3" id="name" type="text" placeholder="Name" />
               </div>
               <div class="col-md-6 col-xl-6 col-xxl-4">
-                <input class="p-3" type="email" placeholder="Email" />
+                <input
+                  class="p-3"
+                  id="email"
+                  type="email"
+                  placeholder="Email"
+                />
               </div>
               <div class="col-xxl-4">
-                <input class="p-3" type="text" placeholder="Phone" />
+                <input class="p-3" id="phone" type="text" placeholder="Phone" />
               </div>
               <div>
                 <textarea
@@ -289,7 +298,11 @@
                 class="d-flex align-items-center justify-content-center justify-content-md-start"
               >
                 <i class="fa-regular fa-envelope me-2"></i
-                ><span>contact@carvan.com</span>
+                ><span
+                  ><a href="mailto:contact@carvan.com"
+                    >contact@carvan.com</a
+                  ></span
+                >
               </div>
               <div
                 class="d-flex align-items-center justify-content-center justify-content-md-start"
@@ -356,5 +369,6 @@
       </div>
     </footer>
     <script src="../index.js"></script>
+    <script src="../js/contact.js"></script>
   </body>
 </html>

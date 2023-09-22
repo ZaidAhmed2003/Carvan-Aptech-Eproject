@@ -3,6 +3,9 @@
 .about__info {
   text-align: center;
 }
+.about__info p {
+  color: var(--description-dark);
+}
 
 .about__img img {
   border-radius: var(--border-radius);
@@ -74,6 +77,132 @@
   box-shadow: var(--btn-shadow);
   border-radius: var(--border-radius);
   z-index: 1;
+}
+
+.card__btn {
+  padding: 0.5rem 0.5rem;
+  width: 125px;
+}
+
+.img-special {
+  object-fit: cover;
+  object-position: center;
+  height: 250px;
+  border-radius: 1rem;
+}
+
+/* Faq Acoordian */
+
+.faq h2 {
+  text-align: center;
+}
+
+#accordion-button-1,
+#accordion-button-2,
+#accordion-button-3,
+#accordion-button-4,
+#accordion-button-5,
+#accordion-button-6 {
+  border-bottom: 1px solid var(--primary);
+}
+
+.accordion-item button[aria-expanded="true"] {
+  border-bottom: 1px solid var(--primary);
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: var(--description-dark);
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  color: var(--primary);
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded="true"] {
+  color: var(--primary);
+}
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+/* Out Teams Section  */
+
+.ourteams__bg {
+  background-color: #0f141e;
 }
 
 /* Media Queries */

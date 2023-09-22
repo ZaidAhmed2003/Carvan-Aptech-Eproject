@@ -7,7 +7,7 @@
   --white: #fff;
   --heading: #3b3c3f;
   --description: #e8e8e8;
-  --description-dark: #1d1d1d;
+  --description-dark: #3c4857;
   --primary: #19ad11;
   --secondary-hover: #fdb801;
   --background-2: #ecebeb;
@@ -370,12 +370,12 @@ p {
 .footer__about {
   padding-right: 2rem;
 }
-
 .footer__contact__info div i,
 .footer__icon {
   color: var(--primary);
 }
 
+.footer__contact__info span:nth-child(2) a,
 .footer__about p,
 .footer__links__list li a {
   color: var(--description);
@@ -383,6 +383,7 @@ p {
 
 .footer__bottom div p:hover,
 .footer__contact__info span:nth-child(2):hover,
+.footer__contact__info span:nth-child(2) a:hover,
 .footer__links__list li a:hover {
   cursor: pointer;
   color: var(--primary);
