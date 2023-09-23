@@ -200,6 +200,7 @@
 /* Out Teams Section  */
 
 .ourteams {
+  margin-top: 15rem;
   position: relative;
   background-color: #0f141e;
 }
@@ -208,10 +209,13 @@
 }
 
 .ourteams__banner {
-  background: url(../images/bg/background-team\ 1.png) no-repeat center;
-  background-size: cover;
+  position: relative;
+  top: -150px;
+  background: url(../images/bg/background-team\ 1.png) center, #5ed817;
+  background-size: 100%;
   color: var(--white);
-  border: 1px solid var(--primary);
+
+  border-radius: 1rem;
 }
 
 .fa-circle {
