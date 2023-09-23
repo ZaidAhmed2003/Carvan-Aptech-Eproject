@@ -19,23 +19,14 @@ items.forEach((item) => item.addEventListener("click", toggleAccordion));
 // Our Teams Swiper
 
 let swiper = new Swiper(".ourteams__cards", {
-  loop: true,
-  slidesPerView: 1,
+  slidesPerView: "auto",
   spaceBetween: 30,
-  centeredSlides: true,
+  freeMode: true,
+  cssMode: true,
   navigation: {
     nextEl: ".rounded-button-next",
     prevEl: ".rounded-button-prev",
   },
-  breakpoints: {
-    992: {
-      centeredSlides: false,
-      slidesPerView: 2,
-    },
-    1400: {
-      slidesPerView: 3,
-    },
-  },
-  mousewheel: true,
   grabCursor: true,
+  mousewheel: true,
 });

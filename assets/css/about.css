@@ -211,8 +211,8 @@
 .ourteams__banner {
   position: relative;
   top: -150px;
-  background: url(../images/bg/background-team\ 1.png) center, #5ed817;
-  background-size: 100%;
+  background: url(../images/bg/background-team\ 1.png) no-repeat center, #5ed817;
+  background-size: cover;
   color: var(--white);
 
   border-radius: 1rem;
@@ -244,7 +244,7 @@
   background-color: var(--white);
   color: var(--black);
   border-radius: var(--border-radius);
-  max-width: 250px;
+  width: 270px;
 }
 .card__img img {
   border-radius: 0.5rem 0.5rem 0 0;
