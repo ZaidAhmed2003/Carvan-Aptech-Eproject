@@ -1,0 +1,67 @@
+/* Common Styles */
+.header-text,
+.header-img,
+.navbar,
+.navbar__links ul li a,
+.login,
+.signup-btn,
+.login-btn a {
+  color: var(--white);
+}
+
+.navbar {
+  background-color: var(--background);
+}
+
+.navbar__btn .btn {
+  color: var(--white);
+  background-color: transparent;
+  padding: 0.5rem 0.5rem;
+}
+
+/* Header Section */
+.header {
+  margin-bottom: 20rem;
+}
+
+.header-section {
+  background: url(../assets/images/bg/bg-hero.png) center no-repeat,
+    var(--background);
+  background-size: cover;
+}
+
+.header-text {
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--fs-subheading);
+}
+
+p {
+  color: var(--white);
+}
+
+.header-img {
+  position: relative;
+  margin-top: -100px;
+  text-align: center;
+  bottom: -130px;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header-img img {
+    bottom: -130px;
+  }
+
+  h1 {
+    font-size: var(--fs-title);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-text {
+    text-align: start;
+  }
+}

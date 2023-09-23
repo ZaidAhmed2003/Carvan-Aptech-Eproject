@@ -211,10 +211,10 @@
 .ourteams__banner {
   position: relative;
   top: -150px;
-  background: url(../images/bg/background-team\ 1.png) no-repeat center, #5ed817;
+  background: url(../assets/images/bg/background-team\ 1.png) no-repeat center;
   background-size: cover;
   color: var(--white);
-
+  border: 3px solid var(--primary);
   border-radius: 1rem;
 }
 

@@ -5,6 +5,7 @@
   --footer: #151515;
   --black: #000;
   --white: #fff;
+  --background: #0f141e;
   --heading: #3b3c3f;
   --description: #e8e8e8;
   --description-dark: #3c4857;
@@ -98,13 +99,15 @@ p {
   outline: none;
   border: 2px solid var(--primary);
   border-radius: var(--border-radius);
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0.5rem;
   cursor: pointer;
+  box-shadow: var(--btn-shadow);
 }
 
 .btn-secondary {
   color: var(--white);
   background-color: var(--primary);
+  padding: 0.5rem 1.5rem;
 }
 
 .btn-primary {
