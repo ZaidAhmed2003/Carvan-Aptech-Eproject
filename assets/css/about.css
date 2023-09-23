@@ -1,5 +1,7 @@
 /* About Section */
-
+.ourteams__details,
+.news__titles,
+.news__top,
 .about__info {
   text-align: center;
 }
@@ -41,10 +43,6 @@
 }
 
 /* Events Section */
-.news__titles,
-.news__top {
-  text-align: center;
-}
 
 .cards {
   position: relative;
@@ -201,13 +199,64 @@
 
 /* Out Teams Section  */
 
-.ourteams__bg {
+.ourteams {
+  position: relative;
   background-color: #0f141e;
+}
+.ourteams__bg {
+  z-index: -99;
+}
+
+.ourteams__banner {
+  background: url(../images/bg/background-team\ 1.png) no-repeat center;
+  background-size: cover;
+  color: var(--white);
+  border: 1px solid var(--primary);
+}
+
+.fa-circle {
+  color: var(--primary);
+  font-size: 10px;
+}
+
+.rounded {
+  border-radius: 50%;
+  height: 50px;
+  aspect-ratio: 1/1;
+}
+
+.rounded-btn {
+  color: var(--primary);
+  background-color: var(--white);
+}
+
+.rounded-btn:hover {
+  box-shadow: 0 0 30px 1px var(--white);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ourteams__card {
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: var(--border-radius);
+  max-width: 250px;
+}
+.card__img img {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* swipper Library */
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
 /* Media Queries */
 
 @media screen and (min-width: 992px) {
+  .ourteams__details,
   .news__titles,
   .about__info {
     text-align: start;
