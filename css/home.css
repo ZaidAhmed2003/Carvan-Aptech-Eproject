@@ -5,8 +5,20 @@
 .navbar__links ul li a,
 .login,
 .signup-btn,
-.login-btn a {
+.login-btn a,
+.header-text p,
+.navbar__btn .btn,
+.ourteams__banner,
+.popular__title {
   color: var(--white);
+}
+
+.featured__title,
+.header-text,
+.ourteams__details,
+.featured__bottom,
+.popular__title {
+  text-align: center;
 }
 
 .navbar {
@@ -14,14 +26,13 @@
 }
 
 .navbar__btn .btn {
-  color: var(--white);
   background-color: transparent;
   padding: 0.5rem 0.5rem;
 }
 
 /* Header Section */
 .header {
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
 }
 
 .header-section {
@@ -30,16 +41,8 @@
   background-size: cover;
 }
 
-.header-text {
-  text-align: center;
-}
-
-h1 {
+.header-text h1 {
   font-size: var(--fs-subheading);
-}
-
-.header-text p {
-  color: var(--white);
 }
 
 .header-img {
@@ -50,16 +53,67 @@ h1 {
   left: 0;
 }
 
-/* Our Teams */
+/* Featured Cars */
 
-.ourteams__details {
-  text-align: center;
+.featured__card {
+  background-color: var(--white);
+  box-shadow: var(--shadow-card);
+  border-radius: var(--border-radius);
 }
+.featured__card img {
+  border-radius: var(--border-img);
+}
+
+.card--title h4 {
+  font-size: 28px;
+}
+
+.featured__types {
+  flex-wrap: wrap;
+  column-gap: 1.75rem;
+  row-gap: 0.5rem;
+}
+.featured__types div img {
+  height: 25px;
+}
+.featured__price div p:nth-child(1),
+.card--title div,
+.featured__types div {
+  font-size: 18px;
+}
+
+.card--title div i {
+  cursor: pointer;
+}
+
+.favourite-checked {
+  color: var(--favourite-checked);
+}
+
+.featured__price div p:nth-child(2) {
+  font-size: 24px;
+}
+.featured__price div p:nth-child(2) span {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 32px;
+}
+
+/* .featured__social p {
+} */
+
+/* Popular Cars */
+
+.popular {
+  background-color: var(--background);
+}
+
+/* Our Teams */
 
 .ourteams {
   margin-top: 15rem;
   position: relative;
-  background-color: #0f141e;
+  background-color: var(--background);
 }
 .ourteams__bg {
   z-index: -99;
@@ -70,7 +124,6 @@ h1 {
   top: -150px;
   background: url(../assets/images/bg/background-team\ 1.png) no-repeat center;
   background-size: cover;
-  color: var(--white);
   border: 3px solid var(--primary);
   border-radius: 1rem;
 }
@@ -124,13 +177,15 @@ h1 {
   h1 {
     font-size: var(--fs-title);
   }
-  .ourteams__details {
+  .ourteams__details,
+  .featured__title {
     text-align: start;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .header-text {
+  .header-text,
+  popular__title {
     text-align: start;
   }
 }

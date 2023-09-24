@@ -6,6 +6,8 @@
   --black: #000;
   --white: #fff;
   --background: #0f141e;
+  --favourite-unchecked: rgb(212, 208, 209);
+  --favourite-checked: crimson;
   --heading: #3b3c3f;
   --description: #e8e8e8;
   --description-dark: #3c4857;
@@ -35,8 +37,10 @@
 
   /* Borders */
   --border-radius: 0.5rem;
+  --border-img: 0.5rem 0.5rem 0 0;
 
   /* Shadows */
+  --shadow-card: rgba(0, 0, 0, 0.24) 4px 4px 10px;
   --btn-shadow: rgba(0, 0, 0, 0.24) 4px 4px 10px;
   --text-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --primary-shadow: rgba(0, 0, 0, 0.24) 0px 4px 12px;
