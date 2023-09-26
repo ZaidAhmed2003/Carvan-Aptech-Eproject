@@ -9,8 +9,8 @@
   --favourite-unchecked: rgb(212, 208, 209);
   --favourite-checked: crimson;
   --heading: #3b3c3f;
-  --description: #e8e8e8;
-  --description-dark: #3c4857;
+  --description: #ffffff;
+  --description-dark: #313131;
   --primary: #19ad11;
   --secondary-hover: #fdb801;
   --background-2: #ecebeb;
@@ -274,6 +274,7 @@ p {
 /* Navbar Styles */
 
 .navbar {
+  background-color: var(--white);
   box-shadow: var(--primary-shadow);
 }
 

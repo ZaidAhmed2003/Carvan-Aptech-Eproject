@@ -9,15 +9,24 @@
 .header-text p,
 .navbar__btn .btn,
 .ourteams__banner,
-.popular__title {
+.popular__title,
+.about__content h2,
+.about__feature div img,
+.about__feature {
   color: var(--white);
 }
 
+.about__feature h5,
+.about__features,
+.about__text,
 .featured__title,
 .header-text,
 .ourteams__details,
 .featured__bottom,
-.popular__title {
+.popular__title,
+.about__content,
+.about__feature p,
+.testimonials__title {
   text-align: center;
 }
 
@@ -108,6 +117,49 @@
   background-color: var(--background);
 }
 
+/* About */
+
+.about {
+  position: relative;
+  background: var(--primary);
+  background-size: 1500px;
+}
+
+.about__img {
+  width: 100%;
+  position: relative;
+  left: 0;
+}
+
+.about__img img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.about__feature {
+  max-width: 250px;
+}
+
+.about__feature h5 {
+  font-size: 18px;
+}
+
+.about__feature p {
+  font-size: 12px;
+}
+
+.about__feature div img {
+  height: 100px;
+}
+.about__feature div img {
+  color: var(--secondary);
+}
+
+.about__text p,
+.about__feature p {
+  color: var(--description);
+}
+
 /* Our Teams */
 
 .ourteams {
@@ -167,6 +219,25 @@
   height: 100%;
 }
 
+/* Testimonials */
+.testimonial__card {
+  position: relative;
+}
+
+.testimonial__card img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+  box-shadow: 4px 4px 20px;
+}
+
+.testimonial__text {
+  position: absolute;
+  color: var(--white);
+  top: 0;
+  left: 0;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
@@ -184,8 +255,13 @@
 }
 
 @media screen and (min-width: 992px) {
+  .about__text,
   .header-text,
-  popular__title {
+  .about__content,
+  .popular__title {
     text-align: start;
+  }
+  .about__text p {
+    max-width: 750px;
   }
 }
