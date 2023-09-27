@@ -9,10 +9,7 @@
 .header-text p,
 .navbar__btn .btn,
 .ourteams__banner,
-.popular__title,
-.about__content h2,
-.about__feature div img,
-.about__feature {
+.popular__title {
   color: var(--white);
 }
 
@@ -24,10 +21,17 @@
 .ourteams__details,
 .featured__bottom,
 .popular__title,
-.about__content,
-.about__feature p,
+.about-content,
+.about-feature p,
 .testimonials__title {
   text-align: center;
+}
+
+.ourteams,
+.about,
+.featured,
+.popular {
+  margin-block: 10rem !important;
 }
 
 .navbar {
@@ -125,68 +129,69 @@
 /* Featured Cars Section */
 
 .featured__social p {
+  font-weight: var(--fw-semibold);
 }
 
-/* Popular Cars */
+/* Popular Cars Section */
 
 .popular {
   background-color: var(--background);
 }
 
+.popular__title h2 {
+  color: var(--title-secondary-dark);
+}
+
 /* About */
 
-.about {
-  position: relative;
-  background: var(--primary);
-  background-size: 1500px;
-}
-
-.about__img {
+.about-img img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
   width: 100%;
-  position: relative;
-  left: 0;
 }
 
-.about__img img {
-  width: 100%;
-  max-height: 100%;
+.about-content {
+  color: var(--description-light);
+  background-color: var(--primary);
+  text-align: center;
 }
 
-.about__feature {
+.about-content h2 {
+  color: var(--title-secondary-dark);
+}
+
+.about-text p {
+  margin-bottom: 10rem !important;
+}
+
+.about-feature {
   max-width: 250px;
+  text-align: center;
 }
 
-.about__feature h5 {
+.about-feature h5 {
   font-size: 18px;
 }
 
-.about__feature p {
-  font-size: 12px;
+.about-feature p {
+  font-size: var(--fs-text);
 }
 
-.about__feature div img {
+.about-feature div img {
   height: 100px;
-}
-.about__feature div img {
-  color: var(--secondary);
-}
-
-.about__text p,
-.about__feature p {
-  color: var(--description);
 }
 
 /* Our Teams */
 
 .ourteams {
-  margin-top: 15rem;
+  margin-top: 30rem !important;
   position: relative;
   background-color: var(--background);
 }
 .ourteams__bg {
   z-index: -99;
 }
-
 .ourteams__banner {
   position: relative;
   top: -150px;
@@ -196,36 +201,73 @@
   border-radius: 1rem;
 }
 
-.fa-circle {
-  color: var(--primary);
-  font-size: 10px;
+.ourteams__details h2 {
+  font-size: var(--fs-heading);
+  color: var(--fs-title-primary);
 }
 
-.rounded {
-  border-radius: 50%;
-  height: 50px;
-  aspect-ratio: 1/1;
+.ourteams__features div span,
+.ourteams__details p {
+  font-size: var(--fs-paragraph);
+  color: var(--description-light);
 }
 
-.rounded-btn {
-  color: var(--primary);
-  background-color: var(--white);
-}
-
-.rounded-btn:hover {
-  box-shadow: 0 0 30px 1px var(--white);
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.ourteams__card {
-  background-color: var(--white);
+.card-secondary {
+  background-color: var(--white) !important;
   color: var(--black);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-card);
   width: 270px;
 }
-.card__img img {
-  border-radius: 0.5rem 0.5rem 0 0;
+
+.card-secondary-img img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--border-card-img);
+}
+.card-secondary-text {
+  position: relative;
+}
+.card-secondary-user {
+  margin-bottom: 6rem !important;
+}
+.card-secondary-user h4 {
+  font-size: var(--fs-card-title-teams);
+}
+.card-secondary-user p {
+  font-size: var(--fs-paragraph);
+}
+.card-secondary-detail p {
+  font-size: var(--fs-card-team);
+  font-weight: var(--fw-semibold);
+}
+.card-secondary-icons {
+  position: absolute;
+  top: -30px;
+}
+.card-secondary-icons div {
+  border: 2px solid var(--primary);
+  border-radius: var(--border-card);
+  width: 40px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--primary);
+  color: var(--white);
+  transition: 0.3s ease;
+}
+.card-secondary-icons div:hover {
+  background-color: var(--white);
+  color: var(--primary);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card-secondary-icons div i {
+  font-size: var(--fs-btn);
+}
+
+.fa-circle {
+  color: var(--primary);
 }
 
 /* swipper Library */
@@ -273,11 +315,11 @@
 @media screen and (min-width: 992px) {
   .about__text,
   .header-text,
-  .about__content,
+  .about-content,
   .popular__title {
     text-align: start;
   }
-  .about__text p {
-    max-width: 750px;
+  .about-wrapper {
+    max-width: 600px;
   }
 }

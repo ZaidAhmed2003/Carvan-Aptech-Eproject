@@ -31,8 +31,11 @@
   --fs-heading: clamp(3.6rem, 3.8vw, 4.2rem);
   --fs-sub-heading: 3.2rem;
   --fs-card-title: 2.4rem;
+  --fs-card-title-teams: 2.4rem;
   --fs-card-price: 1.8rem;
   --fs-paragraph: 1.6rem;
+  --fs-card-team: 1.6rem;
+  --fs-text: 1.2rem;
   --fs-btn: 2rem;
   --fs-stats: 7.2rem;
   --fs-links: 2rem;
@@ -96,6 +99,7 @@ h1 {
 }
 
 h2 {
+  color: var(--title-secondary-light);
   font-size: var(--fs-heading);
   font-weight: var(--fw-bold);
 }
@@ -124,7 +128,7 @@ p {
   border: 2px solid var(--primary);
   outline: none;
   padding: 0.75rem 2rem;
-  min-width: 100px;
+  min-width: 125px;
   color: var(--white);
   cursor: pointer;
   background-color: var(--primary);
@@ -149,6 +153,59 @@ p {
 
 .btn-primary:hover {
   color: inherit;
+}
+
+.rounded-btn {
+  background-image: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  height: 50px;
+  min-width: 50px;
+  aspect-ratio: 1/1;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.rounded-btn:hover {
+  color: var(--primary);
+  background-color: var(--white);
+  box-shadow: 0 0 30px 1px var(--white);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* Icons */
+
+.icon div,
+.icon div {
+  height: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 2px solid var(--primary);
+  transition: 0.3s ease;
+}
+
+.icon-light div {
+  color: var(--white);
+  background-color: var(--primary);
+  transition: 0.3s ease;
+}
+
+.icon-light div:hover {
+  color: var(--primary);
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+
+.icon-dark div {
+  color: var(--primary);
+  background-color: var(--white);
+  transition: 0.3s ease;
+}
+.icon-dark div:hover {
+  background-color: transparent;
+  transition: 0.3s ease;
 }
 
 /* Navbar and Off-canvas Styles */

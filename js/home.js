@@ -29,6 +29,4 @@ let swiper = new Swiper(".ourteams__cards", {
     nextEl: ".rounded-button-next",
     prevEl: ".rounded-button-prev",
   },
-  grabCursor: true,
-  mousewheel: true,
 });
