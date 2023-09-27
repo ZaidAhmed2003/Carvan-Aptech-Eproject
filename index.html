@@ -35,7 +35,7 @@
     <!-- -------------------- Header Section ------------ -->
     <header class="header">
       <!-- ------------------ Navbar ------------------ -->
-      <div class="navbar py-2 px-2">
+      <div class="navbar py-4 px-4">
         <nav class="d-flex justify-content-between align-items-center">
           <button
             class="navbar__menu d-flex d-xl-none align-items-center justify-content-between"
@@ -82,11 +82,6 @@
               </div>
               <a class="ps-2 signup-btn d-none d-xl-block" href="">Signup</a>
             </div>
-            <div class="navbar__btn d-none d-xl-block ms-3">
-              <a href="./pages/addlisting.html" class="btn btn-primary">
-                <i class="fa-solid fa-plus"></i> Add Listing
-              </a>
-            </div>
           </div>
         </nav>
       </div>
@@ -94,11 +89,6 @@
       <!-- Off Canvas -->
 
       <div class="navbar__offcanvas d-flex d-xl-none row">
-        <div class="canvas-btn d-flex align-items-center">
-          <a href="./pages/addlisting.html" class="btn btn-primary">
-            <i class="fa-solid fa-plus"></i> Add Listing
-          </a>
-        </div>
         <div class="navbar__links mt-5">
           <ul class="row g-4">
             <li><a href="./index.html">Home</a></li>
@@ -126,8 +116,10 @@
             Discover Your Dream <br />
             Car at CARVAN
           </h1>
-          <p class="mb-5">Explore the World of Automobiles with Confidence</p>
-          <button class="btn btn-secondary">Explore Now</button>
+          <p class="mb-5 title-heading">
+            Explore the World of Automobiles with Confidence
+          </p>
+          <button class="btn my-5 my-sm-0 btn-primary">Explore Now</button>
         </div>
         <div class="header-img">
           <img
@@ -145,15 +137,15 @@
       <div
         class="featured__title d-md-flex align-items-center justify-content-between"
       >
-        <h2 class="mb-4 mb-md-0">Featured Cars</h2>
-        <div>
-          <button class="btn btn-secondary me-3">New</button>
+        <h2>Featured Cars</h2>
+        <div class="my-5">
+          <button class="btn btn-secondary me-4">New</button>
           <button class="btn btn-secondary">Used</button>
         </div>
       </div>
-      <div class="featured__cards row gy-4 my-3 px-5 px-md-0">
-        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-          <div class="featured__card">
+      <div class="featured__cards row gy-5 justify-content-center">
+        <div class="col-9 col-md-6 col-lg-4 col-xl-3">
+          <div class="card-primary">
             <img
               class="img-fluid"
               src="./assets/images/Rectangle 69.png"
@@ -161,15 +153,15 @@
             />
             <div class="px-3 pb-4">
               <div
-                class="card--title d-flex align-items-center justify-content-between"
+                class="card-primary-title d-flex align-items-center justify-content-between"
               >
                 <h4 class="my-3">Ford Raptor</h4>
-                <div class="d-flex align-items-center">
+                <div class="card-primary-favourite d-flex align-items-center">
                   <i class="fa-solid fa-heart me-1"></i>
                   <p>5</p>
                 </div>
               </div>
-              <div class="featured__types d-flex align-items-center px-2">
+              <div class="card-primary-feature d-flex align-items-center px-2">
                 <div class="d-flex align-items-center">
                   <img src="./assets/images/icons/car-passengers.svg" alt="" />
                   <p class="ms-2">5</p>
@@ -189,103 +181,7 @@
               </div>
               <hr class="mt-4" />
               <div
-                class="featured__price d-flex align-items-end justify-content-between mt-3"
-              >
-                <div>
-                  <p>Price</p>
-                  <p><span>$</span>162000</p>
-                </div>
-                <button class="btn btn-secondary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-          <div class="featured__card">
-            <img
-              class="img-fluid"
-              src="./assets/images/Rectangle 69.png"
-              alt=""
-            />
-            <div class="px-3 pb-4">
-              <div
-                class="card--title d-flex align-items-center justify-content-between"
-              >
-                <h4 class="my-3">Ford Raptor</h4>
-                <div class="d-flex align-items-center">
-                  <i class="fa-solid fa-heart me-1"></i>
-                  <p>5</p>
-                </div>
-              </div>
-              <div class="featured__types d-flex align-items-center px-2">
-                <div class="d-flex align-items-center">
-                  <img src="./assets/images/icons/car-passengers.svg" alt="" />
-                  <p class="ms-2">5</p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img src="./assets/images/icons/car-door.svg" alt="" />
-                  <p class="ms-2">4</p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img src="./assets/images/icons/car-engine.svg" alt="" />
-                  <p class="ms-2">5.0L</p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img src="./assets/images/icons/car.svg" alt="" />
-                  <p class="ms-2">Sedan</p>
-                </div>
-              </div>
-              <hr class="mt-4" />
-              <div
-                class="featured__price d-flex align-items-end justify-content-between mt-3"
-              >
-                <div>
-                  <p>Price</p>
-                  <p><span>$</span>162000</p>
-                </div>
-                <button class="btn btn-secondary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-          <div class="featured__card">
-            <img
-              class="img-fluid"
-              src="./assets/images/Rectangle 69.png"
-              alt=""
-            />
-            <div class="px-3 pb-4">
-              <div
-                class="card--title d-flex align-items-center justify-content-between"
-              >
-                <h4 class="my-3">Ford Raptor</h4>
-                <div class="d-flex align-items-center">
-                  <i class="fa-solid fa-heart me-1"></i>
-                  <p>5</p>
-                </div>
-              </div>
-              <div class="featured__types d-flex align-items-center px-2">
-                <div class="d-flex align-items-center">
-                  <img src="./assets/images/icons/car-passengers.svg" alt="" />
-                  <p class="ms-2">5</p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img src="./assets/images/icons/car-door.svg" alt="" />
-                  <p class="ms-2">4</p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img src="./assets/images/icons/car-engine.svg" alt="" />
-                  <p class="ms-2">5.0L</p>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img src="./assets/images/icons/car.svg" alt="" />
-                  <p class="ms-2">Sedan</p>
-                </div>
-              </div>
-              <hr class="mt-4" />
-              <div
-                class="featured__price d-flex align-items-end justify-content-between mt-3"
+                class="card-primary-price d-flex align-items-end justify-content-between mt-3"
               >
                 <div>
                   <p>Price</p>
@@ -320,7 +216,7 @@
         </div>
         <div class="featured__cards row gy-4 my-3 px-5 px-md-0">
           <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="featured__card">
+            <div class="card-primary">
               <img
                 class="img-fluid"
                 src="./assets/images/Rectangle 69.png"
@@ -371,7 +267,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="featured__card">
+            <div class="card-primary">
               <img
                 class="img-fluid"
                 src="./assets/images/Rectangle 69.png"
@@ -422,7 +318,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-            <div class="featured__card">
+            <div class="card-primary">
               <img
                 class="img-fluid"
                 src="./assets/images/Rectangle 69.png"

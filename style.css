@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
 
+/* Custom Propreties */
+
 :root {
   /* Colors */
   --footer: #151515;
@@ -8,24 +10,32 @@
   --background: #0f141e;
   --favourite-unchecked: rgb(212, 208, 209);
   --favourite-checked: crimson;
-  --heading: #3b3c3f;
-  --description: #ffffff;
-  --description-dark: #313131;
-  --primary: #19ad11;
-  --secondary-hover: #fdb801;
   --background-2: #ecebeb;
+  --primary: #19ad11;
+  --secondary: #fdb801;
+  --title-primary-light: #3b3c3f;
+  --title-primary-dark: #fff;
+  --title-secondary-light: #3b3c3f;
+  --title-secondary-dark: #fff;
+  --description-light: #e6e6e6;
+  --description-dark: #313131;
 
   /* Font Family */
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
 
   /* Font Sizes */
-  --fs-paragraph: 1rem;
-  --fs-links: 1.125rem;
-  --fs-heading: 2rem;
-  --fs-subheading: 3rem;
-  --fs-title: 4.5rem;
-  --fs-subsubheading: 1.25rem;
+  --fs-title-primary: clamp(4.4rem, 5.9vw, 10.5rem);
+  --fs-title-secondary: clamp(4.4rem, 5.9vw, 5.6rem);
+  --fs-title-heading: clamp(1.6rem, 2vw, 3rem);
+  --fs-heading: clamp(3.6rem, 3.8vw, 4.2rem);
+  --fs-sub-heading: 3.2rem;
+  --fs-card-title: 2.4rem;
+  --fs-card-price: 1.8rem;
+  --fs-paragraph: 1.6rem;
+  --fs-btn: 2rem;
+  --fs-stats: 7.2rem;
+  --fs-links: 2rem;
 
   /* Font Weight */
   --fw-light: 300;
@@ -36,8 +46,8 @@
   --fw-extra-bold: 800;
 
   /* Borders */
-  --border-radius: 0.5rem;
-  --border-img: 0.5rem 0.5rem 0 0;
+  --border-card: 0.5rem;
+  --border-card-img: 0.5rem 0.5rem 0 0;
 
   /* Shadows */
   --shadow-card: rgba(0, 0, 0, 0.24) 4px 4px 10px;
@@ -57,37 +67,45 @@
   text-decoration: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: var(--font-primary);
   overflow-x: hidden;
 }
 
-h1 {
-  font-size: var(--fs-title);
-  font-weight: var(--fw-extra-bold);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title-secondary {
   font-family: var(--font-secondary);
+}
+
+h1 {
+  font-size: var(--fs-title-primary);
+  font-weight: var(--fw-extra-bold);
+}
+
+.title-secondary {
+  font-size: var(--fs-title-secondary);
 }
 
 h2 {
-  font-weight: var(--fw-bold);
-  font-size: var(--fs-subheading);
-  font-family: var(--font-secondary);
-}
-
-h3 {
   font-size: var(--fs-heading);
-}
-
-h4 {
-  font-size: var(--fs-subsubheading);
+  font-weight: var(--fw-bold);
 }
 
 p {
-  font-weight: var(--fw-medium);
+  font-size: var(--fs-paragraph);
 }
 
-.dark {
-  color: var(--description-dark);
+.title-heading {
+  font-size: var(--fs-title-heading);
 }
 
 .img-fluid {
@@ -98,53 +116,42 @@ p {
 /* Button Common */
 
 .btn {
-  font-size: var(--fs-links);
-  font-weight: var(--fw-medium);
-  outline: none;
-  border: 2px solid var(--primary);
   border-radius: var(--border-radius);
-  padding: 0.5rem 0.5rem;
-  cursor: pointer;
   box-shadow: var(--btn-shadow);
-}
-
-.btn-secondary {
+  font-size: var(--fs-btn);
+  font-weight: var(--fw-medium);
+  font-family: var(--font-secondary);
+  border: 2px solid var(--primary);
+  outline: none;
+  padding: 0.75rem 2rem;
+  min-width: 100px;
   color: var(--white);
+  cursor: pointer;
   background-color: var(--primary);
-  padding: 0.5rem 1.5rem;
+  background-image: -webkit-linear-gradient(
+    30deg,
+    var(--primary) 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(30deg, var(--primary) 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  transition: background 0.3s ease-in-out;
 }
 
-.btn-primary {
-  color: var(--black);
-  /* background-color: var(--primary); */
+.btn:hover {
+  background-position: 100%;
+  color: var(--primary);
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  color: inherit;
 }
 
 /* Navbar and Off-canvas Styles */
-
-/* Primary Button */
-
-.canvas-btn .btn {
-  background-color: var(--primary);
-  color: var(--white);
-  margin-top: 6rem;
-}
-
-/* Secondary Button */
-
-.navbar__btn .btn {
-  color: var(--black);
-  background-color: transparent;
-}
-
-.navbar__btn .btn:hover {
-  color: var(--white);
-  background-color: var(--primary);
-  transition: 0.2s;
-}
-
-.navbar__btn .btn:active {
-  background-color: var(--primary);
-}
 
 /* Navbar Links */
 
