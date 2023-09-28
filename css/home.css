@@ -9,7 +9,6 @@
 .login-btn a,
 .header-text p,
 .navbar__btn .btn,
-.ourteams__banner,
 .popular__title {
   color: var(--white);
 }
@@ -29,7 +28,6 @@
 }
 
 .testimonials-section,
-.ourteams,
 .about,
 .featured,
 .popular {
@@ -183,102 +181,6 @@
 
 .about-feature div img {
   height: 100px;
-}
-
-/* Our Teams */
-
-.ourteams {
-  margin-top: 30rem !important;
-  position: relative;
-  background-color: var(--background);
-}
-.ourteams__bg {
-  z-index: -99;
-}
-.ourteams__banner {
-  position: relative;
-  top: -150px;
-  background: url(../assets/images/bg/background-team\ 1.png) no-repeat center;
-  background-size: cover;
-  border: 3px solid var(--primary);
-  border-radius: 1.5rem;
-}
-
-.ourteams__details h2 {
-  font-size: var(--fs-heading);
-  color: var(--fs-title-primary);
-}
-
-.ourteams__features div span,
-.ourteams__details p {
-  font-size: var(--fs-paragraph);
-  color: var(--description-light);
-}
-
-.card-secondary {
-  background-color: var(--white) !important;
-  color: var(--black);
-  border-radius: var(--border-card);
-  width: 270px;
-}
-
-.card-secondary-img img {
-  width: 100%;
-  height: 175px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: var(--border-card-img);
-}
-.card-secondary-text {
-  position: relative;
-}
-.card-secondary-user {
-  margin-bottom: 6rem !important;
-}
-.card-secondary-user h4 {
-  font-size: var(--fs-card-title-teams);
-}
-.card-secondary-user p {
-  font-size: var(--fs-paragraph);
-}
-.card-secondary-detail p {
-  font-size: var(--fs-card-team);
-  font-weight: var(--fw-semibold);
-}
-.card-secondary-icons {
-  position: absolute;
-  top: -30px;
-}
-.card-secondary-icons div {
-  border: 2px solid var(--primary);
-  border-radius: var(--border-card);
-  width: 40px;
-  aspect-ratio: 1 / 1;
-  background-color: var(--primary);
-  color: var(--white);
-  transition: 0.3s ease;
-}
-.card-secondary-icons div:hover {
-  background-color: var(--white);
-  color: var(--primary);
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.card-secondary-icons div i {
-  font-size: var(--fs-btn);
-}
-
-.fa-circle {
-  color: var(--primary);
-}
-
-/* swipper Library */
-
-.swiper {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 /* Testimonials */
