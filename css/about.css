@@ -16,16 +16,17 @@
 /* Stats Section */
 
 .stats__number__main {
-  font-size: 120px;
+  font-size: 12rem;
   font-weight: var(--fw-extra-bold);
 }
 
 .stats__text__main {
-  font-size: var(--fs-subheading);
+  font-size: var(--fs-stats);
 }
 
 .stats__number__sub {
-  font-size: var(--fs-title);
+  font-size: var(--fs-stats);
+  line-height: 1;
 }
 .stats__text__main,
 .stats__number__sub,
@@ -58,7 +59,8 @@
   font-weight: var(--fw-bold);
 }
 .card__day {
-  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1.2;
 }
 
 .cards img {

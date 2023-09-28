@@ -49,8 +49,8 @@
   --fw-extra-bold: 800;
 
   /* Borders */
-  --border-card: 0.5rem;
-  --border-card-img: 0.5rem 0.5rem 0 0;
+  --border-card: 0.25rem;
+  --border-card-img: 0.25rem 0.25rem 0 0;
 
   /* Shadows */
   --shadow-card: rgba(0, 0, 0, 0.24) 4px 4px 10px;
@@ -103,9 +103,13 @@ h2 {
   font-size: var(--fs-heading);
   font-weight: var(--fw-bold);
 }
+h3 {
+  font-size: var(--fs-sub-heading);
+}
 
 p {
   font-size: var(--fs-paragraph);
+  line-height: 1.8;
 }
 
 .title-heading {
@@ -199,11 +203,13 @@ p {
 }
 
 .icon-dark div {
+  border: 2px solid var(--white);
   color: var(--primary);
   background-color: var(--white);
   transition: 0.3s ease;
 }
 .icon-dark div:hover {
+  border: 2px solid var(--primary);
   background-color: transparent;
   transition: 0.3s ease;
 }
@@ -352,14 +358,14 @@ p {
 
 .navbar__offcanvas {
   background-color: #000000e7;
+  position: fixed;
+  left: 0;
+  top: 0;
   color: var(--white);
   text-align: start;
-  height: 100%;
-  left: 0;
+  height: 100vh;
   overflow-y: scroll;
   padding-left: 2rem;
-  position: fixed;
-  top: 0;
   transform: translateX(-300px);
   transition: transform 0.3s;
   width: 300px;
@@ -374,7 +380,7 @@ p {
 .offcanvas-signup-btn {
   color: var(--white) !important;
   font-weight: var(--fw-medium);
-  font-size: 1rem;
+  font-size: var(--fs-paragraph);
 }
 
 .offcanvas-login-btn:hover,
@@ -421,7 +427,7 @@ p {
 }
 
 .marquee-text {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   margin-inline: 2.5rem;
   text-transform: uppercase;
 }
@@ -462,8 +468,7 @@ p {
   transition: 0.2s;
 }
 
-.contact__icons div,
-.footer__social__icons div {
+.contact__icons div {
   color: var(--primary);
   background-color: var(--white);
   height: 40px;
@@ -472,12 +477,22 @@ p {
   font-size: 1.25rem;
 }
 
-.contact__icons div:hover,
-.footer__social__icons div:hover {
+.contact__icons div:hover {
   color: var(--white);
   background-color: var(--primary);
   transition: 0.2s;
   cursor: pointer;
+}
+
+.footer__top div h4 {
+  font-size: var(--fs-links);
+}
+
+.footer__bottom,
+.footer__contact,
+.footer__links,
+.footer__about p {
+  font-size: var(--fs-paragraph);
 }
 
 /* Media Queries (Mobile-First) */
@@ -517,7 +532,7 @@ p {
   }
 
   .marquee-text {
-    font-size: 2rem;
+    font-size: 4.6rem;
     margin-inline: 5rem;
   }
 }

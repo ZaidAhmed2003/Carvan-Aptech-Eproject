@@ -1,4 +1,9 @@
+// AOS Library Initialize
+
+AOS.init();
+
 // Favorite button
+
 let favouriteIcons = document.querySelectorAll(".fa-heart");
 
 favouriteIcons.forEach((icon) => {
@@ -6,10 +11,9 @@ favouriteIcons.forEach((icon) => {
   let isFavourite = false;
 
   icon.addEventListener("click", () => {
-    isFavourite = !isFavourite; // Toggle the favorite state
+    isFavourite = !isFavourite;
     icon.classList.toggle("favourite-checked");
 
-    // Update the number based on the favorite state
     if (isFavourite) {
       numberElement.textContent = parseInt(numberElement.textContent) + 1;
     } else {

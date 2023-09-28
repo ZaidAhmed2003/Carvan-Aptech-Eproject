@@ -9,6 +9,11 @@
       content="CARVAN | Your Ultimate Destination for All Cars!"
     />
     <title>CARVAN | Your Ultimate Destination for All Cars!</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="../assets/css/normalize.css" />
     <link
@@ -26,6 +31,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Global Styles -->
     <link rel="stylesheet" href="../style.css" />
     <!-- Page Style -->
@@ -78,9 +84,9 @@
             <div class="d-flex align-items-center">
               <div class="d-flex login-btn align-items-center">
                 <i class="fa-solid fa-user"></i>
-                <a class="px-2 login d-none d-xl-block" href="">Login</a>
+                <a class="px-2 login d-none d-xl-block" href="#">Login</a>
               </div>
-              <a class="ps-2 signup-btn d-none d-xl-block" href="">Signup</a>
+              <a class="ps-2 signup-btn d-none d-xl-block" href="#">Signup</a>
             </div>
           </div>
         </nav>
@@ -88,8 +94,8 @@
 
       <!-- Off Canvas -->
 
-      <div class="navbar__offcanvas d-flex d-xl-none row">
-        <div class="navbar__links mt-5">
+      <div class="navbar__offcanvas d-flex align-items-center d-xl-none row">
+        <div class="offcanvas-links navbar__links">
           <ul class="row g-4">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./pages/about.html">About Us</a></li>
@@ -99,29 +105,46 @@
             <li><a href="./pages/Contact.html">Contact Us</a></li>
           </ul>
         </div>
-        <div class="d-flex align-items-center offcanvas-btns">
-          <div class="d-flex login-btn align-items-center">
-            <i class="fa-solid fa-user"></i>
-            <a class="px-2 login offcanvas-login-btn" href="#">Login</a>
-          </div>
-          <a class="ps-2 signup-btn offcanvas-signup-btn" href="#">Signup</a>
-        </div>
       </div>
 
       <!-- --------------- Section Content -------------- -->
 
       <div class="header-section pt-5">
         <div class="header-text container">
-          <h1 class="mb-5">
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="300"
+            data-aos-easing="linear"
+            class="mb-5"
+          >
             Discover Your Dream <br />
             Car at CARVAN
           </h1>
-          <p class="mb-5 title-heading">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="300"
+            data-aos-easing="linear"
+            data-aos-delay="300"
+            class="mb-5 title-heading"
+          >
             Explore the World of Automobiles with Confidence
           </p>
-          <button class="btn my-5 my-sm-0 btn-primary">Explore Now</button>
+          <button
+            data-aos="fade-up"
+            data-aos-duration="300"
+            data-aos-easing="linear"
+            class="btn my-5 my-sm-0 btn-primary"
+          >
+            Explore Now
+          </button>
         </div>
-        <div class="header-img">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="300"
+          data-aos-easing="linear"
+          data-aos-delay="600"
+          class="header-img"
+        >
           <img
             class="img-fluid"
             src="./assets/images/cars/car-silver.png"
@@ -133,7 +156,12 @@
 
     <!-- -------------------- Main -------------------- -->
 
-    <section class="featured container my-5">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="300"
+      data-aos-easing="linear"
+      class="featured container my-5"
+    >
       <div
         class="featured__title d-md-flex align-items-center justify-content-between"
       >
@@ -374,7 +402,12 @@
       </div>
     </section>
     <section class="popular my-5 py-5">
-      <div class="container">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="300"
+        data-aos-easing="linear"
+        class="container"
+      >
         <div
           class="popular__title d-lg-flex align-items-center justify-content-between"
         >
@@ -689,7 +722,7 @@
           <div
             class="ourteams__banner row p-5 mt-5 gy-lg-0 gy-5 d-flex align-items-center"
           >
-            <div class="ourteams__details col-lg-4">
+            <div class="ourteams__details p-5 col-lg-4">
               <h2 class="mb-5">Meet Our Team</h2>
               <p class="mb-5">
                 Our dedicated team is a driving force in the world of cars,
@@ -931,20 +964,24 @@
         </div>
       </div>
     </section>
-    <!-- <section class="container my-5">
-      <div class="testimonials__title my-5 py-5">
+    <section class="testimonials-section container my-5">
+      <div class="testimonials-title my-5 py-5">
         <h2>Testimonials</h2>
         <p>“what our clients have to say about us”</p>
       </div>
-      <div class="testimonials pb-5 row gy-5">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="testimonial__card">
+      <div class="testimonials pb-5 row gy-5 justify-content-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+          class="col-9 col-md-6 col-lg-3"
+        >
+          <div class="testimonial-card">
             <img
               class="img-fluid"
               src="./assets/images/homepage/testimonial1.png"
               alt="Testimonial img"
             />
-            <div class="testimonial__text p-5">
+            <div class="testimonial-text p-5">
               <h4 class="mb-3">Found My Dream Car</h4>
               <p class="mb-3">
                 I was looking for a reliable preowned car with character. CARVAN
@@ -955,14 +992,19 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="testimonial__card">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="500"
+          class="col-9 col-md-6 col-lg-3"
+        >
+          <div class="testimonial-card">
             <img
               class="img-fluid"
               src="./assets/images/homepage/testimonial1.png"
               alt="Testimonial img"
             />
-            <div class="testimonial__text p-5">
+            <div class="testimonial-text p-5">
               <h4 class="mb-3">Found My Dream Car</h4>
               <p class="mb-3">
                 I was looking for a reliable preowned car with character. CARVAN
@@ -973,14 +1015,19 @@
             </div>
           </div>
         </div>
-        <div class="d-none d-lg-block col-lg-4">
-          <div class="testimonial__card">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="800"
+          data-aos-duration="500"
+          class="col-9 d-none d-xl-block col-lg-3"
+        >
+          <div class="testimonial-card">
             <img
               class="img-fluid"
               src="./assets/images/homepage/testimonial1.png"
               alt="Testimonial img"
             />
-            <div class="testimonial__text p-5">
+            <div class="testimonial-text p-5">
               <h4 class="mb-3">Found My Dream Car</h4>
               <p class="mb-3">
                 I was looking for a reliable preowned car with character. CARVAN
@@ -992,7 +1039,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- -------------------- Footer -------------------- -->
 
@@ -1100,7 +1147,7 @@
           >
             <h4 class="mb-3">Social Network</h4>
             <div
-              class="footer__social__icons d-flex justify-content-center justify-content-md-start"
+              class="icon icon-dark d-flex justify-content-center justify-content-md-start"
             >
               <div
                 class="d-flex align-items-center justify-content-center p-2 me-2"
@@ -1140,6 +1187,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
     <script src="./js/home.js"></script>
