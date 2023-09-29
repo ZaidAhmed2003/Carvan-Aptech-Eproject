@@ -9,6 +9,11 @@
       content="CARVAN | Your Ultimate Destination for All Cars!"
     />
     <title>CARVAN | Your Ultimate Destination for All Cars!</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="../assets/css/normalize.css" />
     <link
@@ -22,6 +27,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Global Styles -->
     <link rel="stylesheet" href="../style.css" />
     <!-- Page Style -->
@@ -30,7 +40,7 @@
   <body>
     <!-- ------------------ Navbar ------------------ -->
 
-    <div class="navbar py-2 px-2">
+    <div class="navbar py-4 px-4">
       <nav class="d-flex justify-content-between align-items-center">
         <button
           class="navbar__menu d-flex d-xl-none align-items-center justify-content-between"
@@ -73,14 +83,9 @@
           <div class="d-flex align-items-center">
             <div class="d-flex login-btn align-items-center">
               <i class="fa-solid fa-user"></i>
-              <a class="px-2 login d-none d-xl-block" href="">Login</a>
+              <a class="px-2 login d-none d-xl-block" href="#">Login</a>
             </div>
-            <a class="ps-2 signup-btn d-none d-xl-block" href="">Signup</a>
-          </div>
-          <div class="navbar__btn d-none d-xl-block ms-3">
-            <a href="./addlisting.html" class="btn btn-primary">
-              <i class="fa-solid fa-plus"></i> Add Listing
-            </a>
+            <a class="ps-2 signup-btn d-none d-xl-block" href="#">Signup</a>
           </div>
         </div>
       </nav>
@@ -88,13 +93,8 @@
 
     <!-- Off Canvas -->
 
-    <div class="navbar__offcanvas d-flex d-xl-none row">
-      <div class="canvas-btn d-flex align-items-center">
-        <a href="./addlisting.html" class="btn btn-primary">
-          <i class="fa-solid fa-plus"></i> Add Listing
-        </a>
-      </div>
-      <div class="navbar__links mt-5">
+    <div class="navbar__offcanvas d-flex align-items-center d-xl-none row">
+      <div class="offcanvas-links navbar__links">
         <ul class="row g-4">
           <li><a href="../index.html">Home</a></li>
           <li><a href="./about.html">About Us</a></li>
@@ -103,13 +103,6 @@
           <li><a href="./preowned.html">PreOwned Cars</a></li>
           <li><a href="./Contact.html">Contact Us</a></li>
         </ul>
-      </div>
-      <div class="d-flex align-items-center offcanvas-btns">
-        <div class="d-flex login-btn align-items-center">
-          <i class="fa-solid fa-user"></i>
-          <a class="px-2 login offcanvas-login-btn" href="#">Login</a>
-        </div>
-        <a class="ps-2 signup-btn offcanvas-signup-btn" href="#">Signup</a>
       </div>
     </div>
 
@@ -133,20 +126,18 @@
             <span class="">(+1)</span> <span class="green">333-9296</span>
           </p>
           <div
-            class="dark d-flex align-items-center justify-content-center justify-content-md-start mb-5"
+            class="d-flex align-items-center justify-content-center justify-content-md-start mb-5"
           >
             <i class="fa-regular fa-envelope me-2 footer__icon"></i>
             <p>
-              <a class="dark" href="mailto:support@carvan.com"
-                >support@carvan.com</a
-              >
+              <a href="mailto:support@carvan.com">support@carvan.com</a>
             </p>
           </div>
 
           <div class="d-md-flex align-items-center">
             <p class="dark mb-4 mb-md-0 me-md-4">Follow Us</p>
             <div
-              class="contact__icons d-flex justify-content-center justify-content-md-start"
+              class="icon icon-light d-flex justify-content-center justify-content-md-start"
             >
               <div
                 class="d-flex align-items-center justify-content-center p-2 me-2"
@@ -204,7 +195,7 @@
             >
               <div class="">
                 <input type="checkbox" name="privacy" id="privacy" />
-                <label class="dark" for="privacy"
+                <label for="privacy" id="privacy"
                   >I accept the
                   <a href="#" class="privacy">privacy policy</a></label
                 >
@@ -330,7 +321,7 @@
           >
             <h4 class="mb-3">Social Network</h4>
             <div
-              class="footer__social__icons d-flex justify-content-center justify-content-md-start"
+              class="icon icon-dark d-flex justify-content-center justify-content-md-start"
             >
               <div
                 class="d-flex align-items-center justify-content-center p-2 me-2"

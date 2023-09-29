@@ -1,13 +1,14 @@
+.contact,
+.map {
+  margin-block: 10rem !important;
+}
+
 /* Button */
 .contact__btn {
   width: 100%;
 }
 
 /* Contact Section */
-.contact {
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-}
 
 /* Contact Form */
 .contact__form {
@@ -15,19 +16,36 @@
   box-shadow: var(--primary-shadow);
   border-radius: var(--border-radius);
   background-color: var(--background-2);
+  font-size: var(--fs-form);
 }
 
 .contact__number {
   font-weight: var(--fw-bold);
-  font-size: var(--fs-heading);
+  font-size: var(--fs-sub-heading);
 }
 
 .contact__number .green {
   color: var(--primary);
 }
 
+a {
+  color: var(--description-dark);
+}
+a:hover {
+  color: var(--primary);
+}
+
 /* Privacy Link */
+.fa-envelope {
+  font-size: var(--fs-paragraph);
+}
+
+#privacy {
+  color: var(--description-dark);
+}
+
 .privacy {
+  font-size: var(--fs-paragraph);
   color: var(--primary);
   text-decoration: underline;
 }
@@ -36,7 +54,6 @@
 #textarea,
 .contact__form .form__group .form__text div input {
   width: 100%;
-
   outline: none;
   border: none;
   border-radius: var(--border-radius);
@@ -44,7 +61,7 @@
 }
 
 #textarea {
-  height: 20rem;
+  height: 40rem;
 }
 
 /* Contact Information */
@@ -53,9 +70,6 @@
 }
 
 /* Map */
-.map {
-  margin-block: 5rem;
-}
 
 .map img {
   width: 100%;

@@ -38,6 +38,7 @@
   --fs-paragraph: 1.6rem;
   --fs-card-team: 1.6rem;
   --fs-text: 1.2rem;
+  --fs-form: 2rem;
   --fs-btn: 2rem;
   --fs-stats: 7.2rem;
   --fs-links: 2rem;
@@ -51,6 +52,7 @@
   --fw-extra-bold: 800;
 
   /* Borders */
+  --border-radius: 0.5rem;
   --border-card: 0.25rem;
   --border-card-img: 0.25rem 0.25rem 0 0;
 
@@ -93,11 +95,13 @@ h6,
 }
 
 h1 {
+  color: var(--title-primary-dark);
   font-size: var(--fs-title-primary);
   font-weight: var(--fw-extra-bold);
 }
 
 .title-secondary {
+  color: var(--title-primary-light);
   font-size: var(--fs-title-secondary);
 }
 
@@ -276,12 +280,7 @@ p {
 
 .fa-user {
   color: var(--primary);
-  font-size: 25px;
-}
-
-.fa-plus {
-  font-size: var(--fs-paragraph);
-  margin-right: 0.25rem;
+  font-size: 2.5rem;
 }
 
 /* Menu Button */
@@ -492,6 +491,7 @@ p {
 }
 
 .footer__top div h4 {
+  color: var(--title-secondary-dark);
   font-size: var(--fs-links);
 }
 
