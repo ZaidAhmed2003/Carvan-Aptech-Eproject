@@ -1,0 +1,110 @@
+{
+  "Ford": {
+    "Founded": "June 16, 1903",
+    "Founder": "Henry Ford",
+    "Headquarters": "Dearborn, Michigan, United States",
+    "Slogan": "Built Ford Tough",
+    "Official Site": "www.ford.com",
+    "Brand Image": "",
+    "Logo": "../assets/images/brands/Ford/Ford-Logo.png",
+    "Subsidiaries": ["Ford Smart Mobility", "The Lincoln Motor Company"],
+    "Overview": "Ford Motor Company, commonly known as Ford, is an American multinational automaker founded by Henry Ford on June 16, 1903. The company is headquartered in Dearborn, Michigan, United States. Ford is known for its pioneering work in the development of assembly line production techniques, and it played a major role in the mass production of automobiles. The company's slogan is 'Built Ford Tough,' and it operates several subsidiaries, including Ford Smart Mobility and The Lincoln Motor Company.",
+    "Cars": []
+  },
+  "Audi": {
+    "Founded": "May 24, 1990",
+    "Founder": "Volkswagen Group",
+    "Headquarters": "Ingolstadt, Germany",
+    "Slogan": "Vorsprung durch Technik",
+    "Official Site": "www.audi.com",
+    "Brand Image": "",
+    "Logo": "../assets/images/brands/Audi/Audi-Logo.png",
+    "Subsidiaries": ["Audi Sport GmbH"],
+    "Overview": "Audi is a German automotive manufacturer known for its premium and luxury vehicles. It was founded on May 24, 1990, as a subsidiary of the Volkswagen Group. Audi's headquarters are located in Ingolstadt, Germany. The company's slogan is 'Vorsprung durch Technik,' which means 'Advancement through Technology' in English. Audi is known for its innovative technology and high-quality automobiles.",
+    "Cars": []
+  },
+  "BMW": {
+    "Founded": "March 7, 1916",
+    "Founder": "Karl Rapp, Gustav Otto",
+    "Headquarters": "Munich, Germany",
+    "Slogan": "The Ultimate Driving Machine",
+    "Official Site": "www.bmw.com",
+    "Brand Image": "",
+    "Logo": "../assets/images/brands/BMW/BMW-Logo.png",
+    "Subsidiaries": ["MINI", "Rolls-Royce Motor Cars"],
+    "Overview": "Bayerische Motoren Werke AG, commonly referred to as BMW, is a German multinational corporation which produces luxury vehicles and motorcycles. The company was founded on March 7, 1916, by Karl Rapp and Gustav Otto. BMW is headquartered in Munich, Germany, and is known for its slogan 'The Ultimate Driving Machine.' BMW produces a range of high-quality automobiles and is also the parent company of MINI and Rolls-Royce Motor Cars.",
+    "Cars": []
+  },
+  "Bentley": {
+    "Founded": "January 18, 1919",
+    "Founder": "W.O. Bentley",
+    "Headquarters": "Crewe, England",
+    "Slogan": "Luxury Performance",
+    "Official Site": "www.bentleymotors.com",
+    "Brand Image": "",
+    "Logo": "../assets/images/brands/Bentley/Bentley-Logo.jpg",
+    "Subsidiaries": [],
+    "Overview": "Bentley Motors Limited is a British luxury automotive company founded on January 18, 1919, by W.O. Bentley. The company's headquarters are located in Crewe, England. Bentley is known for its luxurious and high-performance automobiles, catering to discerning customers who seek both opulence and power in their vehicles.",
+    "Cars": []
+  },
+  "Cadillac": {
+    "Founded": "August 22, 1902",
+    "Founder": "Henry Leland",
+    "Headquarters": "Detroit, Michigan, United States",
+    "Slogan": "Dare Greatly",
+    "Official Site": "www.cadillac.com",
+    "Brand Image": "",
+    "Logo": "../assets/images/brands/Cadillac/Cadillac-Logo.png",
+    "Subsidiaries": [],
+    "Overview": "Cadillac is an American luxury automobile brand founded on August 22, 1902, by Henry Leland. The company is headquartered in Detroit, Michigan, United States. Cadillac is known for producing luxury vehicles with innovative technology and striking designs. Their slogan, 'Dare Greatly,' reflects their commitment to pushing boundaries and delivering exceptional driving experiences.",
+    "Cars": []
+  },
+  "Chevrolet": {
+    "Founded": "November 3, 1911",
+    "Founder": "Louis Chevrolet, William C. Durant",
+    "Headquarters": "Detroit, Michigan, United States",
+    "Slogan": "Find New Roads",
+    "Official Site": "www.chevrolet.com",
+    "Brand Image": "",
+    "Logo": "../assets/images/brands/Chevrolet/Chevrolet-logo.png",
+    "Subsidiaries": [],
+    "Overview": "Chevrolet, often referred to as Chevy, is an American automobile brand founded on November 3, 1911, by Louis Chevrolet and William C. Durant. The company is headquartered in Detroit, Michigan, United States. Chevrolet is known for producing a wide range of vehicles, from compact cars to full-size trucks, offering consumers options to 'Find New Roads' and explore different driving experiences.",
+    "Cars": []
+  },
+  "Ferrari": {
+    "Founded": "20 November 1947",
+    "Founder": "Enzo Ferrari",
+    "Headquarters": "Maranello, Italy",
+    "Slogan": "Passion for Excellence",
+    "Official Site": "www.ferrari.com",
+    "Brand Image": "",
+    "Logo": "../assets/images/brands/Ferrari/Ferrari-logo.png",
+    "Subsidiaries": [],
+    "Overview": "Ferrari is an Italian luxury sports car manufacturer founded on 20 November 1947 by Enzo Ferrari. The company is headquartered in Maranello, Italy, and is known for its iconic red sports cars with a passion for excellence. Ferrari has a rich racing history and is celebrated for its high-performance vehicles.",
+    "Cars": []
+  },
+  "Porsche": {
+    "Founded": "25 April 1931",
+    "Founder": "Ferdinand Porsche",
+    "Headquarters": "Stuttgart, Germany",
+    "Slogan": "There is no substitute",
+    "Official Site": "www.porsche.com",
+    "Brand Image": "",
+    "Logo": "../assets/images/brands/Porsche/Porsche-Logo.png",
+    "Subsidiaries": [],
+    "Overview": "Porsche is a German automobile manufacturer founded on 25 April 1931 by Ferdinand Porsche. The company is headquartered in Stuttgart, Germany, and is renowned for producing high-performance sports cars, SUVs, and sedans. Porsche has a strong racing heritage and is known for its engineering excellence with the slogan 'There is no substitute.'",
+    "Cars": []
+  },
+  "Mercedes Benz": {
+    "Founded": "28 June 1926",
+    "Founder": "Karl Benz, Gottlieb Daimler",
+    "Headquarters": "Stuttgart, Germany",
+    "Slogan": "The Best or Nothing",
+    "Official Site": "www.mercedes-benz.com",
+    "Brand Image": "",
+    "Logo": "../assets/images/brands/MercedesBenz/Mercedes-Benz-Logo.png",
+    "Subsidiaries": [],
+    "Overview": "Mercedes-Benz is a German luxury automobile manufacturer founded on 28 June 1926 by Karl Benz and Gottlieb Daimler. The company is headquartered in Stuttgart, Germany, and is known for producing a wide range of luxury cars, trucks, and buses. Mercedes-Benz is renowned for its commitment to excellence with the slogan 'The Best or Nothing.'",
+    "Cars": []
+  }
+}

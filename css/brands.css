@@ -1,0 +1,76 @@
+.header {
+  background: url(../assets/images/brandpage/Mistakes-People-Make-When-Buying-Car-Insurance.jpg)
+    top no-repeat;
+  background-size: cover;
+  padding: 10rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  position: relative;
+}
+
+.brand-section {
+  margin-block: 10rem !important;
+}
+
+.brands div {
+  height: 250px;
+}
+
+.brand-img {
+  position: relative;
+  box-shadow: 4px 4px 10px grey;
+  border-radius: var(--border-radius);
+}
+
+.brand-img::before {
+  position: absolute;
+  content: attr(data-brand-name);
+  border-radius: var(--border-radius);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 48px;
+  font-family: var(--font-secondary);
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  color: var(--white);
+  background-color: var(--primary-low);
+  transition: all 0.3s ease;
+}
+
+.brand-img:hover::before {
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.brand-detail {
+  /* box-shadow: 4px 4px 20px; */
+  border: 3px solid var(--primary);
+  border-radius: var(--border-radius);
+}
+
+.subsidiaries ul li,
+.headquarters ul li {
+  list-style-type: disc;
+  font-size: var(--fs-paragraph);
+}
+
+.founded p,
+.website p span,
+.founder p span {
+  font-weight: var(--fw-bold);
+}
+
+.brand-title {
+  text-align: center;
+}
+
+.founded p:first-child {
+  font-size: 3rem;
+  color: var(--primary);
+}

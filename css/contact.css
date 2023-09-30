@@ -56,7 +56,7 @@ a:hover {
   width: 100%;
   outline: none;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-input);
   box-shadow: var(--text-box-shadow);
 }
 

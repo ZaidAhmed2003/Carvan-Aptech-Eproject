@@ -9,6 +9,11 @@
       content="CARVAN | Your Ultimate Destination for All Cars!"
     />
     <title>CARVAN | Your Ultimate Destination for All Cars!</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="../assets/css/normalize.css" />
     <link
@@ -22,15 +27,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Global Styles -->
     <link rel="stylesheet" href="../style.css" />
     <!-- Page Style -->
-    <link rel="stylesheet" href="../assets/css/contact.css" />
+    <link rel="stylesheet" href="../css/brands.css" />
   </head>
   <body>
     <!-- ------------------ Navbar ------------------ -->
 
-    <div class="navbar py-2 px-2">
+    <div class="navbar py-4 px-4">
       <nav class="d-flex justify-content-between align-items-center">
         <button
           class="navbar__menu d-flex d-xl-none align-items-center justify-content-between"
@@ -73,14 +83,9 @@
           <div class="d-flex align-items-center">
             <div class="d-flex login-btn align-items-center">
               <i class="fa-solid fa-user"></i>
-              <a class="px-2 login d-none d-xl-block" href="">Login</a>
+              <a class="px-2 login d-none d-xl-block" href="#">Login</a>
             </div>
-            <a class="ps-2 signup-btn d-none d-xl-block" href="">Signup</a>
-          </div>
-          <div class="navbar__btn d-none d-xl-block ms-3">
-            <a href="./addlisting.html" class="btn btn-primary">
-              <i class="fa-solid fa-plus"></i> Add Listing
-            </a>
+            <a class="ps-2 signup-btn d-none d-xl-block" href="#">Signup</a>
           </div>
         </div>
       </nav>
@@ -88,13 +93,8 @@
 
     <!-- Off Canvas -->
 
-    <div class="navbar__offcanvas d-flex d-xl-none row">
-      <div class="canvas-btn d-flex align-items-center">
-        <a href="./addlisting.html" class="btn btn-primary">
-          <i class="fa-solid fa-plus"></i> Add Listing
-        </a>
-      </div>
-      <div class="navbar__links mt-5">
+    <div class="navbar__offcanvas d-flex align-items-center d-xl-none row">
+      <div class="offcanvas-links navbar__links">
         <ul class="row g-4">
           <li><a href="../index.html">Home</a></li>
           <li><a href="./about.html">About Us</a></li>
@@ -104,16 +104,81 @@
           <li><a href="./Contact.html">Contact Us</a></li>
         </ul>
       </div>
-      <div class="d-flex align-items-center offcanvas-btns">
-        <div class="d-flex login-btn align-items-center">
-          <i class="fa-solid fa-user"></i>
-          <a class="px-2 login offcanvas-login-btn" href="#">Login</a>
-        </div>
-        <a class="ps-2 signup-btn offcanvas-signup-btn" href="#">Signup</a>
-      </div>
     </div>
-
     <!-- -------------------Main--------------------- -->
+
+    <main>
+      <section class="header">
+        <h1 class="title-secondary-dark">Brands</h1>
+      </section>
+      <section class="brand-section container">
+        <!-- <div class="brands row gy-5 justify-content-center"></div> -->
+        <div id="brand-detail" class="brand-detail p-5">
+          <div class="row">
+            <div class="col-12 col-xl-5 mb-5 pb-5 mb-xl-0 pb-xl-0">
+              <div class="brand-detail-img">
+                <img
+                  class="img-fluid"
+                  src="../assets/images/brands/Ford/Ford-Logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="brand-title">
+                <h1 class="title-secondary-light">Ford</h1>
+                <div class="founded d-flex flex-column">
+                  <p>
+                    June 16 <br />
+                    1903
+                  </p>
+                  <p>Founded</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-7">
+              <div class="overview mb-5">
+                <h2 class="mb-4">Overview</h2>
+                <p>
+                  Volkswagen, shortened to VW, is a German automaker founded on
+                  28 May 1937 by the German Labour Front under Adolf Hitler and
+                  headquartered in Wolfsburg. It is the flagship marque of the
+                  Volkswagen Group, the largest automaker by worldwide sales in
+                  2016.
+                </p>
+              </div>
+              <div class="headquarters mb-5">
+                <h2 class="mb-4">HeadQuarters</h2>
+                <div class="ms-5">
+                  <ul>
+                    <li>United States</li>
+                    <li>United States</li>
+                    <li>United States</li>
+                    <li>United States</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="subsidiaries mb-5">
+                <h2 class="mb-4">Subsidiaries</h2>
+                <div class="ms-5">
+                  <ul>
+                    <li>United States</li>
+                    <li>United States</li>
+                    <li>United States</li>
+                    <li>United States</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="founder">
+                <p><span>Founder :</span></p>
+              </div>
+              <div class="website">
+                <p><span>Website :</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- ------------------- Footer ----------------- -->
 
     <!-- Footer Headline -->
@@ -190,7 +255,11 @@
                 class="d-flex align-items-center justify-content-center justify-content-md-start"
               >
                 <i class="fa-regular fa-envelope me-2"></i
-                ><span>contact@carvan.com</span>
+                ><span
+                  ><a href="mailto:contact@carvan.com"
+                    >contact@carvan.com</a
+                  ></span
+                >
               </div>
               <div
                 class="d-flex align-items-center justify-content-center justify-content-md-start"
@@ -216,7 +285,7 @@
           >
             <h4 class="mb-3">Social Network</h4>
             <div
-              class="footer__social__icons d-flex justify-content-center justify-content-md-start"
+              class="icon icon-dark d-flex justify-content-center justify-content-md-start"
             >
               <div
                 class="d-flex align-items-center justify-content-center p-2 me-2"
@@ -256,6 +325,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="../index.js"></script>
+    <script src="../js/brands.js"></script>
   </body>
 </html>

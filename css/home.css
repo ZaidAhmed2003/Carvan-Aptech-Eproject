@@ -205,6 +205,7 @@
   z-index: 3;
 }
 .testimonial-text h4 {
+  color: var(--title-secondary-dark);
   font-size: var(--fs-card-title);
 }
 .testimonial-text p {

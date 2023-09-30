@@ -10,15 +10,16 @@
   --background: #0f141e;
   --favourite-unchecked: rgb(212, 208, 209);
   --favourite-checked: crimson;
-  --background-2: #ecebeb;
-  --primary: #19ad11;
+  --background-2: rgb(236, 235, 235);
+  --primary: rgb(25, 173, 17);
+  --primary-low: rgba(25, 173, 17, 0.7);
   --secondary: #fdb801;
-  --title-primary-light: #3b3c3f;
+  --title-primary-light: rgb(59, 60, 63);
   --title-primary-dark: #fff;
-  --title-secondary-light: #313131;
+  --title-secondary-light: rgb(49, 49, 49);
   --title-secondary-dark: #fff;
-  --description-light: #e6e6e6;
-  --description-dark: #313131;
+  --description-light: rgb(230, 230, 230);
+  --description-dark: rgb(49, 49, 49);
 
   /* Font Family */
   --font-primary: "Poppins", sans-serif;
@@ -53,6 +54,7 @@
 
   /* Borders */
   --border-radius: 0.5rem;
+  --border-input: 0.75rem;
   --border-card: 0.25rem;
   --border-card-img: 0.25rem 0.25rem 0 0;
 
@@ -100,7 +102,11 @@ h1 {
   font-weight: var(--fw-extra-bold);
 }
 
-.title-secondary {
+.title-secondary-dark {
+  color: var(--title-primary-dark);
+  font-size: var(--fs-title-secondary);
+}
+.title-secondary-light {
   color: var(--title-primary-light);
   font-size: var(--fs-title-secondary);
 }
@@ -121,6 +127,7 @@ h4 {
 p {
   font-size: var(--fs-paragraph);
   line-height: 1.8;
+  font-weight: var(--fw-medium);
 }
 
 .title-heading {
