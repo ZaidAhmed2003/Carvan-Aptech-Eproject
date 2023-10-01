@@ -1,11 +1,18 @@
 .header {
-  background: url(../assets/images/brandpage/Mistakes-People-Make-When-Buying-Car-Insurance.jpg)
+  background: url(../assets/images/brandpage/Mistakes-People-Make-When-Buying-Car-Insurance.webp)
     top no-repeat;
   background-size: cover;
-  padding: 10rem;
   margin-bottom: 10rem;
   text-align: center;
   position: relative;
+}
+
+.header h1 {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 15rem;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .brand-section {
@@ -49,6 +56,7 @@
 }
 
 .brand-detail {
+  /* display: none; */
   /* box-shadow: 4px 4px 20px; */
   border: 3px solid var(--primary);
   border-radius: var(--border-radius);
@@ -73,4 +81,8 @@
 .founded p:first-child {
   font-size: 3rem;
   color: var(--primary);
+}
+
+.brand-detail-img {
+  min-height: 350px;
 }
