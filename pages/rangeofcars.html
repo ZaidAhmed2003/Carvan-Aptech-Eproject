@@ -9,12 +9,13 @@
       content="CARVAN | Your Ultimate Destination for All Cars!"
     />
     <title>CARVAN | Your Ultimate Destination for All Cars!</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="../assets/css/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -22,15 +23,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Global Styles -->
     <link rel="stylesheet" href="../style.css" />
     <!-- Page Style -->
-    <link rel="stylesheet" href="../assets/css/contact.css" />
+    <link rel="stylesheet" href="../css/rangeofcars.css" />
   </head>
   <body>
     <!-- ------------------ Navbar ------------------ -->
 
-    <div class="navbar py-2 px-2">
+    <div class="navbar py-4 px-4">
       <nav class="d-flex justify-content-between align-items-center">
         <button
           class="navbar__menu d-flex d-xl-none align-items-center justify-content-between"
@@ -73,14 +79,9 @@
           <div class="d-flex align-items-center">
             <div class="d-flex login-btn align-items-center">
               <i class="fa-solid fa-user"></i>
-              <a class="px-2 login d-none d-xl-block" href="">Login</a>
+              <a class="px-2 login d-none d-xl-block" href="#">Login</a>
             </div>
-            <a class="ps-2 signup-btn d-none d-xl-block" href="">Signup</a>
-          </div>
-          <div class="navbar__btn d-none d-xl-block ms-3">
-            <a href="./addlisting.html" class="btn btn-primary">
-              <i class="fa-solid fa-plus"></i> Add Listing
-            </a>
+            <a class="ps-2 signup-btn d-none d-xl-block" href="#">Signup</a>
           </div>
         </div>
       </nav>
@@ -88,13 +89,8 @@
 
     <!-- Off Canvas -->
 
-    <div class="navbar__offcanvas d-flex d-xl-none row">
-      <div class="canvas-btn d-flex align-items-center">
-        <a href="./addlisting.html" class="btn btn-primary">
-          <i class="fa-solid fa-plus"></i> Add Listing
-        </a>
-      </div>
-      <div class="navbar__links mt-5">
+    <div class="navbar__offcanvas d-flex align-items-center d-xl-none row">
+      <div class="offcanvas-links navbar__links">
         <ul class="row g-4">
           <li><a href="../index.html">Home</a></li>
           <li><a href="./about.html">About Us</a></li>
@@ -104,16 +100,19 @@
           <li><a href="./Contact.html">Contact Us</a></li>
         </ul>
       </div>
-      <div class="d-flex align-items-center offcanvas-btns">
-        <div class="d-flex login-btn align-items-center">
-          <i class="fa-solid fa-user"></i>
-          <a class="px-2 login offcanvas-login-btn" href="#">Login</a>
-        </div>
-        <a class="ps-2 signup-btn offcanvas-signup-btn" href="#">Signup</a>
-      </div>
     </div>
-
     <!-- -------------------Main--------------------- -->
+
+    <main>
+      <section class="header">
+        <h1 class="title-secondary-dark">New Cars</h1>
+      </section>
+      <section class="container cards-container">
+        <h2 class="d-flex justify-content-center my-5">Range of Cars</h2>
+        <div id="card-container" class="row gy-5 justify-content-center"></div>
+      </section>
+    </main>
+
     <!-- ------------------- Footer ----------------- -->
 
     <!-- Footer Headline -->
@@ -190,7 +189,11 @@
                 class="d-flex align-items-center justify-content-center justify-content-md-start"
               >
                 <i class="fa-regular fa-envelope me-2"></i
-                ><span>contact@carvan.com</span>
+                ><span
+                  ><a href="mailto:contact@carvan.com"
+                    >contact@carvan.com</a
+                  ></span
+                >
               </div>
               <div
                 class="d-flex align-items-center justify-content-center justify-content-md-start"
@@ -216,7 +219,7 @@
           >
             <h4 class="mb-3">Social Network</h4>
             <div
-              class="footer__social__icons d-flex justify-content-center justify-content-md-start"
+              class="icon icon-dark d-flex justify-content-center justify-content-md-start"
             >
               <div
                 class="d-flex align-items-center justify-content-center p-2 me-2"
@@ -256,6 +259,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="../index.js"></script>
+    <script src="../js/rangeofcars.js"></script>
   </body>
 </html>
