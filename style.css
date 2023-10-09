@@ -57,6 +57,7 @@
   --border-input: 0.75rem;
   --border-card: 0.25rem;
   --border-card-img: 0.25rem 0.25rem 0 0;
+  --border-img: 0.5rem;
 
   /* Shadows */
   --shadow-card: rgba(0, 0, 0, 0.24) 4px 4px 10px;
