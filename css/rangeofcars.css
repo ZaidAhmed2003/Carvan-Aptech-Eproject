@@ -119,6 +119,7 @@ p {
 }
 
 .car-detail {
+  display: none;
   border: 3px solid var(--primary);
   border-radius: var(--border-radius);
 }
