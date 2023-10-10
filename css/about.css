@@ -97,6 +97,9 @@
   border-radius: 1rem;
 }
 
+.title-secondary {
+  font-size: var(--fs-title-secondary);
+}
 /* Faq Acoordian */
 
 .faq h2 {

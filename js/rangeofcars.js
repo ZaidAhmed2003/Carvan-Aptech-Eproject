@@ -2,9 +2,11 @@
 const carList = document.getElementById("car-list");
 const carDetails = document.getElementById("car-details");
 let carData = {}; // Object to store car data by brand
-
+let selectedCardIndex = null;
 // Sample API URL
 const apiUrl = "../brands.json";
+
+// Postioning Scrollbar
 
 // Function to fetch car data for a specific brand from the API
 async function fetchCarData() {
@@ -57,8 +59,6 @@ function displayCarList() {
           </div>
         </div>
 
-
-
         <div class="p-3 d-flex flex-column justify-content-end">
         <div
           class="card-primary-feature d-flex align-items-end mt-3"
@@ -106,6 +106,15 @@ function displayCarList() {
 
       // Add a click event listener to show full car details
       card.addEventListener("click", () => {
+        const cardRect = card.getBoundingClientRect();
+        const scrollTop = window.scrollY || window.pageYOffset;
+        const cardTop = cardRect.top + scrollTop;
+        const screenHeight = window.innerHeight;
+
+        // Store the card position and screen height
+        sessionStorage.setItem("selectedCardTop", cardTop);
+        sessionStorage.setItem("screenHeight", screenHeight);
+
         displayCarDetails(brand, car);
       });
 
@@ -116,6 +125,8 @@ function displayCarList() {
 
 // Function to display the full car details
 function displayCarDetails(brand, car) {
+  carList.scrollIntoView({ behavior: "smooth" });
+
   const featuresList = car.Features.map((feature) => `<li>${feature}</li>`); // Convert features to a list of <li> elements
 
   carDetails.innerHTML = `
@@ -162,10 +173,21 @@ function displayCarDetails(brand, car) {
   carList.style.display = "none";
 
   const backBtn = document.getElementById("back-btn");
-  backBtn.addEventListener("click", () => {
+  backBtn.addEventListener("click", (e) => {
+    e.preventDefault();
     // Show the car list section and hide the car details section
     carDetails.style.display = "none";
     carList.style.display = "flex";
+
+    // Retrieve the stored card position and screen height
+    const selectedCardTop = sessionStorage.getItem("selectedCardTop");
+    const screenHeight = sessionStorage.getItem("screenHeight");
+
+    if (selectedCardTop && screenHeight) {
+      // Calculate the scroll position to center the card on the screen
+      const scrollToY = selectedCardTop - screenHeight / 2;
+      window.scrollTo(0, scrollToY);
+    }
   });
 }
 

@@ -24,7 +24,7 @@
         "Type": "Coupe",
         "Price": "50,000",
         "Features": ["Bluetooth", "LED headlights", "Sound system"],
-        "Images": "../assets/images/brands/Ford/Cars/mustang.jpg"
+        "Images": "../assets/images/brands/Ford/Cars/1.jpg"
       },
       {
         "Model": "Explorer",
@@ -40,7 +40,7 @@
         "Type": "SUV",
         "Price": "40,000",
         "Features": ["Bluetooth", "Reversing camera", "Traction Control"],
-        "Images": "../assets/images/brands/Ford/Cars/explorer.jpg"
+        "Images": "../assets/images/brands/Ford/Cars/2.avif"
       },
       {
         "Model": "F-150",
@@ -56,7 +56,7 @@
         "Type": "Truck",
         "Price": "45,000",
         "Features": ["Bluetooth", "Navigation System", "USB port"],
-        "Images": []
+        "Images": "../assets/images/brands/Ford/Cars/3.webp"
       },
       {
         "Model": "Escape",
@@ -72,7 +72,7 @@
         "Type": "SUV",
         "Price": "28,000",
         "Features": ["Bluetooth", "Reversing camera", "Traction Control"],
-        "Images": [],
+        "Images": "../assets/images/brands/Ford/Cars/4.webp",
         "History": "This used Ford Escape has been well-maintained and has served its previous owner faithfully. It's known for its reliability and comfortable ride. It's the perfect SUV for family trips and adventures.",
         "Story": "This Ford Escape was previously owned by a family who enjoyed numerous road trips and camping adventures. It holds cherished memories of cross-country journeys and outdoor experiences."
       },
@@ -90,7 +90,7 @@
         "Type": "Truck",
         "Price": "25,000",
         "Features": ["Bluetooth", "Navigation System", "USB port"],
-        "Images": [],
+        "Images": "../assets/images/brands/Ford/Cars/5.jpg",
         "History": "This used Ford Ranger is a reliable workhorse that has been used for light-duty tasks. It's known for its durability and versatility.",
         "Story": "This Ford Ranger has been a trusted companion for a small business owner. It has hauled supplies, tools, and equipment to various job sites, contributing to the growth of the business."
       }
@@ -121,7 +121,7 @@
         "Type": "Sedan",
         "Price": "35,000",
         "Features": ["Bluetooth", "LED headlights", "Navigation System"],
-        "Images": ["audi1_image1.jpg", "audi1_image2.jpg"]
+        "Images": "../assets/images/brands/Audi/Cars/1.jpg"
       },
       {
         "Model": "Q5",
@@ -137,7 +137,7 @@
         "Type": "SUV",
         "Price": "45,000",
         "Features": ["Bluetooth", "Reversing camera", "Traction Control"],
-        "Images": ["audi2_image1.jpg", "audi2_image2.jpg"]
+        "Images": "../assets/images/brands/Audi/Cars/2.webp"
       },
       {
         "Model": "A4",
@@ -153,7 +153,7 @@
         "Type": "Sedan",
         "Price": "40,000",
         "Features": ["Bluetooth", "Leather seats", "Sound system"],
-        "Images": ["audi3_image1.jpg", "audi3_image2.jpg"]
+        "Images": "../assets/images/brands/Audi/Cars/3.jpg"
       },
       {
         "Model": "A5",
@@ -169,7 +169,7 @@
         "Type": "Coupe",
         "Price": "30,000",
         "Features": ["Bluetooth", "Heated seats", "Traction Control"],
-        "Images": ["audi5_image1.jpg", "audi5_image2.jpg"],
+        "Images": "../assets/images/brands/Audi/Cars/4.jpg",
         "History": "This used Audi A5 has been well-maintained and has a sporty history. It's known for its sleek design and excellent performance.",
         "Story": "This Audi A5 was previously owned by an enthusiast who enjoyed spirited drives on scenic routes. It's a perfect blend of style and performance."
       },
@@ -187,7 +187,7 @@
         "Type": "SUV",
         "Price": "48,000",
         "Features": ["Bluetooth", "Leather seats", "Navigation System"],
-        "Images": ["audi6_image1.jpg", "audi6_image2.jpg"],
+        "Images": "../assets/images/brands/Audi/Cars/5.webp",
         "History": "This used Audi Q7 offers a spacious and luxurious ride. It's known for its advanced technology and comfortable interior.",
         "Story": "This Audi Q7 was previously owned by a family who used it for road trips and vacations. It has witnessed countless adventures and family memories."
       }
@@ -218,7 +218,7 @@
         "Type": "Sedan",
         "Price": "45,000",
         "Features": ["Bluetooth", "LED headlights", "Navigation System"],
-        "Images": ["bmw1_image1.jpg", "bmw1_image2.jpg"]
+        "Images": "../assets/images/brands/BMW/Cars/1.jpg"
       },
       {
         "Model": "X5",
@@ -234,7 +234,7 @@
         "Type": "SUV",
         "Price": "55,000",
         "Features": ["Bluetooth", "Reversing camera", "Traction Control"],
-        "Images": ["bmw2_image1.jpg", "bmw2_image2.jpg"]
+        "Images": "../assets/images/brands/BMW/Cars/2.jpg"
       },
       {
         "Model": "5 Series",
@@ -250,7 +250,7 @@
         "Type": "Sedan",
         "Price": "50,000",
         "Features": ["Bluetooth", "Leather seats", "Sound system"],
-        "Images": ["bmw3_image1.jpg", "bmw3_image2.jpg"]
+        "Images": "../assets/images/brands/BMW/Cars/3.jpg"
       },
       {
         "Model": "4 Series",
@@ -266,7 +266,7 @@
         "Type": "Coupe",
         "Price": "40,000",
         "Features": ["Bluetooth", "Heated seats", "Traction Control"],
-        "Images": ["bmw5_image1.jpg", "bmw5_image2.jpg"],
+        "Images": "../assets/images/brands/BMW/Cars/4.jpeg",
         "History": "This used BMW 4 Series is a stylish coupe with a dynamic history. It's known for its sporty design and agile handling.",
         "Story": "This BMW 4 Series was previously owned by an enthusiast who appreciated its spirited performance. It's a perfect choice for those who seek excitement on the road."
       },
@@ -284,7 +284,7 @@
         "Type": "SUV",
         "Price": "35,000",
         "Features": ["Bluetooth", "Leather seats", "Navigation System"],
-        "Images": ["bmw6_image1.jpg", "bmw6_image2.jpg"],
+        "Images": "../assets/images/brands/BMW/Cars/5.jpg",
         "History": "This used BMW X3 offers a comfortable and luxurious ride. It's known for its advanced technology and spacious interior.",
         "Story": "This BMW X3 was previously owned by a family who used it for road trips and family outings. It has been a reliable companion for memorable journeys."
       }
@@ -322,7 +322,7 @@
           "360-degree camera",
           "Heated steering wheel"
         ],
-        "Images": ["bentley1_image1.jpg", "bentley1_image2.jpg"]
+        "Images": "../assets/images/brands/Bentley/Cars/1.webp"
       },
       {
         "Model": "Bentayga",
@@ -345,7 +345,7 @@
           "Reversing camera",
           "Panoramic sunroof"
         ],
-        "Images": ["bentley2_image1.jpg", "bentley2_image2.jpg"]
+        "Images": "../assets/images/brands/Bentley/Cars/2.jpg"
       },
       {
         "Model": "Flying Spur",
@@ -368,7 +368,7 @@
           "Massage seats",
           "Adaptive cruise control"
         ],
-        "Images": ["bentley3_image1.jpg", "bentley3_image2.jpg"]
+        "Images": "../assets/images/brands/Bentley/Cars/3.jpg"
       },
       {
         "Model": "Mulsanne",
@@ -391,7 +391,7 @@
           "Sunroof",
           "Rear-seat entertainment system"
         ],
-        "Images": ["bentley4_image1.jpg", "bentley4_image2.jpg"],
+        "Images": "../assets/images/brands/Bentley/Cars/4.jpg",
         "History": "This used Bentley Mulsanne is a classic luxury sedan. It's known for its opulent interior and timeless design.",
         "Story": "This Bentley Mulsanne was previously owned by a prominent business executive who enjoyed the luxurious experience it provided during long drives and important meetings."
       },
@@ -416,7 +416,7 @@
           "Massage seats",
           "Convertible top"
         ],
-        "Images": ["bentley5_image1.jpg", "bentley5_image2.jpg"],
+        "Images": "../assets/images/brands/Bentley/Cars/5.jpg",
         "History": "This used Bentley Continental GTC is a convertible grand tourer. It's known for its elegant design and exhilarating open-top driving experience.",
         "Story": "This Bentley Continental GTC has been the preferred choice for luxurious road trips. Its previous owner enjoyed the wind in their hair while cruising along scenic routes."
       }
@@ -454,7 +454,7 @@
           "Sunroof",
           "BOSE premium sound system"
         ],
-        "Images": ["cadillac1_image1.jpg", "cadillac1_image2.jpg"]
+        "Images": "../assets/images/brands/Cadillac/Cars/1.jpg"
       },
       {
         "Model": "XT5",
@@ -477,7 +477,7 @@
           "360-degree camera",
           "Adaptive cruise control"
         ],
-        "Images": ["cadillac2_image1.jpg", "cadillac2_image2.jpg"]
+        "Images": "../assets/images/brands/Cadillac/Cars/2.jpg"
       },
       {
         "Model": "CT6",
@@ -500,7 +500,7 @@
           "BOSE premium sound system",
           "Panoramic sunroof"
         ],
-        "Images": ["cadillac3_image1.jpg", "cadillac3_image2.jpg"]
+        "Images": "../assets/images/brands/Cadillac/Cars/3.jpg"
       },
       {
         "Model": "XT4",
@@ -523,7 +523,7 @@
           "360-degree camera",
           "BOSE premium sound system"
         ],
-        "Images": ["cadillac5_image1.jpg", "cadillac5_image2.jpg"],
+        "Images": "../assets/images/brands/Cadillac/Cars/4.webp",
         "History": "This used Cadillac XT4 is a luxury compact SUV with a reliable history. It's known for its comfortable ride and advanced technology.",
         "Story": "This Cadillac XT4 was previously owned by a family who enjoyed its spacious interior and smooth ride. It has been on memorable road trips and city adventures."
       },
@@ -548,7 +548,7 @@
           "Sunroof",
           "BOSE premium sound system"
         ],
-        "Images": ["cadillac6_image1.jpg", "cadillac6_image2.jpg"]
+        "Images": "../assets/images/brands/Cadillac/Cars/5.jpg"
       }
     ]
   },
@@ -584,7 +584,7 @@
           "BOSE premium sound system",
           "Sunroof"
         ],
-        "Images": ["chevrolet1_image1.jpg", "chevrolet1_image2.jpg"]
+        "Images": "../assets/images/brands/Chevrolet/Cars/1.jpg"
       },
       {
         "Model": "Equinox",
@@ -607,7 +607,7 @@
           "Rearview camera",
           "Apple CarPlay/Android Auto"
         ],
-        "Images": ["chevrolet2_image1.jpg", "chevrolet2_image2.jpg"]
+        "Images": "../assets/images/brands/Chevrolet/Cars/2.webp"
       },
       {
         "Model": "Malibu",
@@ -630,7 +630,7 @@
           "Cruise control",
           "Lane-keeping assist"
         ],
-        "Images": ["chevrolet3_image1.jpg", "chevrolet3_image2.jpg"]
+        "Images": "../assets/images/brands/Chevrolet/Cars/3.jpg"
       },
       {
         "Model": "Impala",
@@ -653,7 +653,7 @@
           "Cruise control",
           "Keyless start"
         ],
-        "Images": ["chevrolet5_image1.jpg", "chevrolet5_image2.jpg"],
+        "Images": "../assets/images/brands/Chevrolet/Cars/4.jpg",
         "History": "This used Chevrolet Impala is a classic American sedan known for its comfort and spacious interior.",
         "Story": "This Chevrolet Impala was previously owned by a family who used it for daily commuting and family trips. It's been a reliable and comfortable companion."
       },
@@ -678,7 +678,7 @@
           "Bed liner",
           "Towing package"
         ],
-        "Images": ["chevrolet6_image1.jpg", "chevrolet6_image2.jpg"],
+        "Images": "../assets/images/brands/Chevrolet/Cars/5.jpg",
         "History": "This used Chevrolet Silverado is a rugged pickup truck known for its capability and versatility.",
         "Story": "This Chevrolet Silverado has been a reliable workhorse for its previous owner, used for hauling and towing heavy loads. It's built to handle tough tasks."
       }
@@ -716,7 +716,7 @@
           "Carbon fiber interior trim",
           "BOSE premium sound system"
         ],
-        "Images": ["ferrari1_image1.jpg", "ferrari1_image2.jpg"]
+        "Images": "../assets/images/brands/Ferrari/Cars/1.jpg"
       },
       {
         "Model": "Portofino",
@@ -739,7 +739,7 @@
           "Retractable hardtop",
           "Apple CarPlay/Android Auto"
         ],
-        "Images": ["ferrari2_image1.jpg", "ferrari2_image2.jpg"]
+        "Images": "../assets/images/brands/Ferrari/Cars/2.jpg"
       },
       {
         "Model": "812 Superfast",
@@ -762,7 +762,7 @@
           "High-revving V12 engine",
           "Carbon ceramic brakes"
         ],
-        "Images": ["ferrari3_image1.jpg", "ferrari3_image2.jpg"]
+        "Images": "../assets/images/brands/Ferrari/Cars/3.jpg"
       },
       {
         "Model": "488 GTB",
@@ -785,7 +785,7 @@
           "Aerodynamic design",
           "Adaptive suspension"
         ],
-        "Images": ["ferrari5_image1.jpg", "ferrari5_image2.jpg"],
+        "Images": "../assets/images/brands/Ferrari/Cars/4.jpg",
         "History": "This used Ferrari 488 GTB is a high-performance sports car known for its sharp handling and powerful V8 engine.",
         "Story": "This Ferrari 488 GTB was previously owned by a car enthusiast who enjoyed its thrilling performance on both the track and open roads."
       },
@@ -810,7 +810,7 @@
           "All-wheel drive",
           "Rear-seat entertainment system"
         ],
-        "Images": ["ferrari7_image1.jpg", "ferrari7_image2.jpg"],
+        "Images": "../assets/images/brands/Ferrari/Cars/5.jpg",
         "History": "This used Ferrari GTC4Lusso is a luxurious and powerful grand tourer known for its V12 engine and spacious interior.",
         "Story": "This Ferrari GTC4Lusso has been on cross-country road trips, offering its passengers comfort and entertainment. It's a blend of performance and luxury."
       }
@@ -848,7 +848,7 @@
           "Rear-engine layout",
           "BOSE surround sound system"
         ],
-        "Images": ["porsche1_image1.jpg", "porsche1_image2.jpg"]
+        "Images": "../assets/images/brands/Porsche/Cars/1.jpg"
       },
       {
         "Model": "Taycan",
@@ -870,7 +870,7 @@
           "Advanced driver-assistance systems",
           "Luxury sedan experience"
         ],
-        "Images": ["porsche2_image1.jpg", "porsche2_image2.jpg"]
+        "Images": "../assets/images/brands/Porsche/Cars/2.jpg"
       },
       {
         "Model": "Cayenne",
@@ -893,7 +893,7 @@
           "Spacious interior",
           "Off-road capability"
         ],
-        "Images": ["porsche3_image1.jpg", "porsche3_image2.jpg"]
+        "Images": "../assets/images/brands/Porsche/Cars/3.jpg"
       },
       {
         "Model": "Macan",
@@ -916,7 +916,7 @@
           "Compact SUV",
           "Agile handling"
         ],
-        "Images": ["porsche5_image1.jpg", "porsche5_image2.jpg"],
+        "Images": "../assets/images/brands/Porsche/Cars/4.webp",
         "History": "This used Porsche Macan is a compact SUV known for its sporty handling and premium interior.",
         "Story": "This Porsche Macan has been cherished by its previous owner, who enjoyed its dynamic driving experience and practicality for daily use."
       },
@@ -941,7 +941,7 @@
           "Retractable soft top",
           "Sports car performance"
         ],
-        "Images": ["porsche6_image1.jpg", "porsche6_image2.jpg"],
+        "Images": "../assets/images/brands/Porsche/Cars/5.jpg",
         "History": "This used Porsche 718 Boxster is a convertible sports car known for its agility and open-top driving experience.",
         "Story": "This Porsche 718 Boxster was previously owned by an enthusiast who enjoyed top-down drives along scenic routes. It's a perfect choice for those who love the thrill of open-air motoring."
       }
@@ -982,7 +982,7 @@
           "Luxurious interior",
           "Advanced safety systems"
         ],
-        "Images": ["mercedes1_image1.jpg", "mercedes1_image2.jpg"]
+        "Images": "../assets/images/brands/MercedesBenz/Cars/1.jpg"
       },
       {
         "Model": "E-Class",
@@ -1005,7 +1005,7 @@
           "Executive sedan experience",
           "Burmester premium sound system"
         ],
-        "Images": ["mercedes2_image1.jpg", "mercedes2_image2.jpg"]
+        "Images": "../assets/images/brands/MercedesBenz/Cars/2.jpg"
       },
       {
         "Model": "S-Class",
@@ -1028,7 +1028,7 @@
           "Flagship luxury sedan",
           "Magic Sky Control sunroof"
         ],
-        "Images": ["mercedes3_image1.jpg", "mercedes3_image2.jpg"]
+        "Images": "../assets/images/brands/MercedesBenz/Cars/3.jpg"
       },
       {
         "Model": "GLE",
@@ -1051,7 +1051,7 @@
           "Midsize luxury SUV",
           "Advanced safety technology"
         ],
-        "Images": ["mercedes5_image1.jpg", "mercedes5_image2.jpg"],
+        "Images": "../assets/images/brands/MercedesBenz/Cars/4.webp",
         "History": "This used Mercedes-Benz GLE is a midsize luxury SUV known for its comfort and advanced technology.",
         "Story": "This Mercedes-Benz GLE has been owned by a family and has provided them with spacious and comfortable rides on various road trips."
       },
@@ -1076,7 +1076,7 @@
           "Compact luxury sedan",
           "Sporty design"
         ],
-        "Images": ["mercedes6_image1.jpg", "mercedes6_image2.jpg"],
+        "Images": "../assets/images/brands/MercedesBenz/Cars/5.avif",
         "History": "This used Mercedes-Benz CLA is a compact luxury sedan known for its sporty styling and performance.",
         "Story": "This Mercedes-Benz CLA was owned by a young enthusiast who enjoyed the combination of luxury and sportiness in their daily commute."
       }

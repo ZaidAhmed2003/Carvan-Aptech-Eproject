@@ -24,6 +24,10 @@
   font-size: var(--fs-sub-heading);
 }
 
+.title-secondary {
+  font-size: var(--fs-title-secondary);
+}
+
 .contact__number .green {
   color: var(--primary);
 }

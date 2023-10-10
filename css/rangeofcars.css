@@ -117,3 +117,8 @@ p {
   list-style: disc;
   font-size: 1.6rem;
 }
+
+.car-detail {
+  border: 3px solid var(--primary);
+  border-radius: var(--border-radius);
+}
