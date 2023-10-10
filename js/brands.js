@@ -56,7 +56,7 @@ async function createBrandElements() {
 
   container.addEventListener("click", (event) => {
     const target = event.target;
-    console.log("clicked");
+    target.parentElement.parentElement.scrollIntoView({ behavior: "smooth" });
 
     const brandName = target.getAttribute("data-brand-name");
     const brand = brandsData[brandName];
